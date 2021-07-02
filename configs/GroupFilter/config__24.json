@@ -1,0 +1,24 @@
+{
+  "groups": [
+    {
+      "name": "Life Stage",
+      "desc": "",
+      "operator": "=",
+      "defaultVal": "Spring Chinook Adult Migration ",
+      "appendSameLayer": true,
+      "appendSameLayerConjunc": "OR",
+      "caseSearch": false,
+      "layers": [
+        {
+          "layer": "Join_Features_to_Life_Stage_Restoration_Prioritization_9926",
+          "field": "LifeStage",
+          "dataType": "esriFieldTypeString",
+          "useDomain": true
+        }
+      ]
+    }
+  ],
+  "persistOnClose": false,
+  "slAppendChoice": "OR",
+  "headerText": "Filter by Life Stage"
+}

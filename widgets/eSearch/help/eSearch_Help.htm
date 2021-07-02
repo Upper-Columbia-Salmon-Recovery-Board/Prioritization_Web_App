@@ -1,0 +1,888 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="NOINDEX,FOLLOW" name="ROBOTS" />
+  <meta content="en" name="content-language" />
+  <title>Web AppBuilder for ArcGIS | Help - Enhanced Search widget</title>
+  <link href="rsrc/common.css" type="text/css" rel="stylesheet" />
+  <link href="rsrc/screen.css" type="text/css" rel="stylesheet" />
+  <link rel="shortcut icon" href="images/help.png" type="image/x-icon">
+</head>
+
+<body style="padding: 20px;">
+  <div class="toc">
+    <h5>In this topic</h5>
+    <ol>
+      <li><a href="#ESRI_SECTION1_DDBD4D2E6A354DBC868DA37BD0C9DE6F">Configuring the Enhanced Search widget</a>
+      </li>
+      <li><a href="#ESRI_SECTION1_93B7EEDFDDDB4389B1F994E7792FF6DA">Using the Enhanced Search widget</a>
+        <ol>
+          <li><a href="#GUID-E5AA1E1B-FE95-4DC4-A606-304439703320">By Attribute</a></li>
+          <li><a href="#GUID-DABC3A28-3643-47CA-B2EB-86354F8D79E8">By Shape</a></li>
+          <li><a href="#GUID-B1D6D396-03D9-4DFA-9436-C4C3E87D8C52">By Spatial</a></li>
+          <li><a href="#GUID-214604C0-0CF2-480A-A9FD-BAF0F453BCA8">Results</a></li>
+          <li><a href="#GUID-ECDFB290-706C-4609-B74A-4F88B552A73C">URL Search</a></li>
+        </ol>
+      </li>
+      <li><a href="#ESRI_SECTION1_49F7CC0972264BBAB0CBE89DB59632C2">What's New</a>
+      </li>
+    </ol>
+  </div>
+  <h1 class="divider page-title">Enhanced Search Widget Version 2.12</h1>
+  <section class="section1 padded-anchor" id="GUID-427FD8E9-7F89-4FDD-981C-E39B8F23C663" purpose="section1">
+    <h2></h2>
+    <p id="GUID-58542db1-d0e7-4f8a-8895-4d8d2ca41a3f">The Enhanced Search widget allows you to retrieve information from source data by executing a predefined query(s).</p>
+    <p id="GUID-54577fa3-34ae-479b-8700-3c6131c6740c">The Enhanced Search widget serves as a query builder during configuration, allowing you to define the query by specifying the map service layer url, filter expression, and displaying fields in query results. Each Search works with a single layer. However, you can define multiple searches for a single application, and data layers can be from multiple sources.</p>
+    </section>
+  <section class="section1 padded-anchor" id="ESRI_SECTION1_DDBD4D2E6A354DBC868DA37BD0C9DE6F" purpose="section1">
+    <h2>Configuring the Enhanced Search widget</h2>
+    <p id="GUID-31f62bed-bee5-41a9-bd79-7e019be9e004">The following steps indicate how to create a search. Repeat these steps if you need to define multiple searches.</p>
+  </section>
+  <section class="wfsteps padded-anchor" purpose="wfsteps">
+    <h4></h4>
+    <div class="steps" id="GUID-CCB64297-6506-46F5-9010-7AE4DB1ED980">
+        <ol>
+          <li purpose="step" id="GUID-315c0f96-9ac7-4e90-9fba-b2dfe557217f">
+            <span purpose="cmd" id="GUID-476e48ee-a3dd-481b-bf3d-9666491a8560">Hover the mouse over the Enhanced Search widget and click the small edit icon
+              <img purpose="img" placement="inline" alt="Edit" title="Edit" src="images/GUID-31D329BD-BC73-4BBE-AE1D-3A1261BF912A-web.png">
+            </span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-5BBC15C5-D5CB-4FC5-B849-53E856BC4642">The configuration window for this widget opens.</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-28712196-12E0-4718-AE48-ACC945D39528-web.png" purpose="img" alt="Add new search" title="Add new search">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_1"><span purpose="cmd" id="GUID-0BF93AA2-EA79-4B8E-BC7C-5AACD6C115CF">Optionally, click <span class="uicontrol">change widget icon</span> if you want to replace the default icon for this widget.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-00ECBC9C-227E-417A-824E-AEC92A6216E6">A file explorer window opens allowing you to browse to a local image file to use as the widget icon.</p>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_2"><span purpose="cmd" id="GUID-720E6BFA-56E6-4FD3-A050-F7151EEE9A5C">Click <span class="uicontrol">Add a Search Layer</span> under Settings.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-195793D7-B1A5-40E0-8A1C-8BD3BBA196DD">The new search dialog opens. Now enter the <span class="uicontrol">Search URL</span> of the service layer that you wish to use in the search.</p>
+              <p id="GUID-73CC4E7E-55C9-4D9C-A49C-6C4295C9B240"></p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-68ECFA80-6E1C-44E7-8332-CC3AFB5831F7-web.png" purpose="img" alt="Search URL" title="Search URL">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p></p>
+              <p id="GUID-6F5AEB32-9D8B-4BEC-AF22-7AA54E76D80D">Once you have entered the url, click into the next field or press enter in order to load the layers fields into the <span class="uicontrol">Available Fields</span> grid.</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-83372C9E-9701-4996-9AFA-5DB2007FFDCE-web.png" purpose="img" alt="URL Browse Button" title="URL Browse Button">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-363203F4-2C68-42D3-BD88-9A1A8011C6C3-web.png" purpose="img" alt="Available Fields" title="Available Fields">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_3"><span purpose="cmd" id="GUID-ED1CFA68-BE5D-436B-BD87-1CDB01538895">Select individual fields from the <span class="uicontrol">Available Fields</span> grid and click the <span class="uicontrol">Include</span> button or just click the <span class="uicontrol">Include All</span> button to add all the available fields to the <span class="uicontrol">Included Fields</span> grid.</span>
+          </li>
+          <li purpose="step" id="ESRI_STEP_4"><span purpose="cmd" id="GUID-26A585DC-24BD-4F75-B106-004F656A993C">Next choose one of the fields to be the <span class="uicontrol">Title</span> field by selecting the radio button for that field.</span>
+            <h3></h3>
+            <aside class="note" id="GUID-98f9a706-641c-41d1-8c8f-3915aff7e9f5">
+              <h5 class="icon-lightbulb">Tip:</h5>
+              <div class="note-content">
+                <p id="GUID-f4d59596-e5a5-4bc0-8119-54094a1c00d5">For number and date fields an edit button will be present to allow you to edit the format of that fields data and set if the field will be a sum field.</p>
+              </div>
+            </aside>
+            <h3></h3>
+            <aside class="note" id="GUID-90300752-a0e5-44aa-a2b0-e4601bbcbc31">
+              <h5 class="icon-lightbulb">Tip:</h5>
+              <div class="note-content">
+                <p id="GUID-5becd146-9385-4f10-b9fa-2924d72339eb">For number fields you will have the option to diable this field from the show statistics dialog.</p>
+              </div>
+            </aside>
+            <div class="stepresult" purpose="stepresult">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-93cf8782-8367-497b-8f1b-1cd2a1704b46-web.png" purpose="img" alt="Choose title field" title="Choose title field">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="stepresult" purpose="stepresult">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-6E01FFBD-264F-42D9-9C13-58DC38700B45-web.png" purpose="img" alt="Format field" title="Format field">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_5"><span purpose="cmd" id="GUID-07614884-E7F8-477F-8EFE-6344458CCB8A">Optionally set <span class="uicontrol">Result Item Sorting</span> by clicking the pencil.</span>
+            <h3></h3>
+            <aside class="note" id="GUID-26862F82-60E8-44D5-A6AD-A5033616B475">
+              <h5 class="icon-lightbulb">Tip:</h5>
+              <div class="note-content">
+                <p id="GUID-8C943016-7E5A-4245-B1BB-AF675BD4E50E">If your map service layer does not support Advance Query Capabilities: OrderBy then this button will be disabled.</p>
+              </div>
+            </aside>
+            <div class="stepresult" purpose="stepresult">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-e529d90e-8a6c-4929-91ee-32de4fb4f52c-web.png" purpose="img" alt="Result Sorting" title="Result Sorting">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-00c3cc32-61c9-4519-98e2-d4c8a603c045">This will bring up this dialog to allow you to add fields and choose the sort direction.</p>
+            </div>
+            <div class="stepresult" purpose="stepresult">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-27bfa98a-36f0-4392-bc35-c192e2a92983-web.png" purpose="img" alt="Result Sorting Dialog" title="Result Sorting Dialog">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_6"><span purpose="cmd" id="GUID-D5B34A70-42C7-48FA-94F4-5DF554E01ED5">Give your search a <span class="uicontrol">Title</span>.</span></li>
+          <li purpose="step" id="ESRI_STEP_7"><span purpose="cmd" id="GUID-D8080F6D-43FB-41DC-82B7-B157ED5E1324">Optionally enter a <span class="uicontrol">Definition Expression</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-1E8FD88F-F1A4-44E6-861A-22E06FB4CC69">The <span class="uicontrol">Definition Expression</span> is a string that will validate to an actual SQL expression (i.e. Upper(Field_Name) = 'ROBERTS').</p>
+
+            </div>
+            <h3></h3>
+            <aside class="note" id="GUID-1dfeda93-ba51-4008-b4b7-5ee1fe3c6871">
+              <h5 class="icon-caution-cone">Warning:</h5>
+              <div class="note-content">
+                <p id="GUID-4e66370e-5610-4232-ac3f-6cba9073df9d">This is an actual SQL expression that will limit the search results to the defeinition expressions criteria as well as the actual search SQL criteria. If you only want to search and work with a subset of features in a search layer, you can apply a definition query to the search layer</p>
+              </div>
+            </aside>
+
+            <div class="stepresult" purpose="stepresult">
+              <ul>
+                <li>For example:</li>
+                <li>• You might want to search only cities with a population above a certain threshold.</li>
+                <li>• Many datasets, such as roads and street datasets, have subsets of features (classes), and you might want to define search layers for each class of roads independent of the other features..</li>
+                <li>• In another case, you might have large enterprise databases with datasets that contain millions of features across wide extents—say for a whole nation or state. Yet, in your search, you might want to work with only a subset of that data.</li>
+              </ul>
+            </div>
+            <h3></h3>
+            <aside class="note" id="GUID-4A41604D-24BB-4912-AEBA-182E86095B10">
+              <h5 class="icon-caution-cone">Warning:</h5>
+              <div class="note-content">
+                <p id="GUID-1F672D63-1E43-4867-824A-697C3E47BE1E">You should <strong>NOT</strong> use 1=1</p>
+              </div>
+            </aside>
+          </li>
+          <li purpose="step" id="ESRI_STEP_8"><span purpose="cmd" id="GUID-F35A2330-E0C6-4EEC-97A7-D4537EBE3D1E">Optionally check the <span class="uicontrol">Spatial Search Layer</span> checkbox if you want to alow this layer to be included in a spatial search.</span></li>
+          <li purpose="step" id="ESRI_STEP_9"><span purpose="cmd" id="GUID-525A5B38-CBFC-4957-8454-ED6A23E7D75E">Optionally select the <span class="uicontrol">Layer Symbology</span> option you want the layer to have. The default is <span class="uicontrol">from Server</span> which means that the layer symbology will be drawn from The ArcGIS Server map services symbology. <span class="uicontrol">from Config</span> means that the widgets default symbology for the geometry tupe will be used. <span class="uicontrol">from Layer</span> means that the search results for this specific layer will be drawn using the symbology specified by the layers symbology configration. To add or edit that layer specific symbology just click on the <span class="uicontrol">Add\Edit Layer Specific Symoblogy</span> button.</span></li>
+          <li purpose="step" id="ESRI_STEP_10"><span purpose="cmd" id="GUID-976F095D-FBBE-49D2-B3EC-5B2858D89CB2">Optionally set the <span class="uicontrol">Zoom scale</span> if only set the zoom scale then this will only apply to point geometry results, but if you also chack the <span class="uicontrol">Force Scale</span> then the zoom scale will be used on all geometry types.</span></li>
+          <li purpose="step" id="ESRI_STEP_11"><span purpose="cmd" id="GUID-66549847-EDF6-4D54-B19D-85545AF6B33C">Optionally select the <span class="uicontrol">Add result as opertional layer</span> if you want the layer to appear in the Layer List Widget and/or Attribute Table Widget</span></li>
+          <li purpose="step" id="ESRI_STEP_12"><span purpose="cmd" id="GUID-9DC97945-192F-4524-892E-AB7AFFEA6BFC">Optionally select the <span class="uicontrol">Show in Attribute Table Widget</span> if you want the search results to automatically open in the Attribute Table Widget.</span></li>
+          <li purpose="step" id="ESRI_STEP_13"><span purpose="cmd" id="GUID-DB4643F7-3BFA-4AF1-8A7E-2F12E0B692AE">Optionally select the <span class="uicontrol">Auto zoom to search results</span> and/or <span class="uicontrol">Disable search results popup</span> if you want to override the widgets global settings for these option for this layer only.</li>
+          <li purpose="step" id="ESRI_STEP_13"><span purpose="cmd" id="GUID-DB4643F7-3BFA-4AF1-8A7E-2F12E0B692AE">Optionally select the <span class="uicontrol">Show Attachments</span> if you want the search results popup info window to have a link to the features attachments.</li>
+          <li purpose="step" id="ESRI_STEP_14"><span purpose="cmd" id="GUID-271A40F4-EC66-4E31-8018-812AFB061917">Optionally select the <span class="uicontrol">Hide Null data in widget results and popups</span> if you want the search results and popups to not contain any fields that have no data.</li>
+          <li purpose="step" id="ESRI_STEP_15"><span purpose="cmd" id="GUID-28993BB3-20C5-4B8F-B6C9-28142D058FA2">Optionally add search link(s) to your search by clicking the <span class="uicontrol">Add Link</span> button.</span>
+            <div class="stepresult" purpose="stepresult">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-3E2735A5-2862-4238-A87B-E0AFCDDC5DC1-web.png" purpose="img" alt="Add Link" title="Add Link">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-C0BD22A5-07C5-4C14-ADD7-FE86281003A9">Give the link an alias and configure the other link options like <span class="uicontrol">Disable Link if Null</span> which will prevent the link from showing in the widget if the link field is null, and <span class="uicontrol">Disable link in PopUp</span> (self-explanatory), and <span class="uicontrol">PopUp Link Type</span> which assigns the link as a text hyperlink in the popup or and image link.</p>
+              <p id="GUID-C838222B-E94C-46FB-A194-CF408BCBD9A3">Set the <span class="uicontrol">Link Content</span> by assigning static text that represents the link url (i.e. http://www.esri.com) or clicking the <span class="uicontrol">Plus button</span> to add a field from the search layer that contains the link url. Do the same for the <span class="uicontrol">Link Icon Content</span>.</p>
+            </div>
+            <h3></h3>
+            <aside class="note" id="GUID-AF45189C-6625-46FC-A825-71BF6B8650D7">
+              <h5 class="icon-lightbulb">Tip:</h5>
+              <div class="note-content">
+                <p id="GUID-403A1E64-0EE6-4B51-9551-B15A368686CC">Hover over the question mark button for tips on filling the <span class="uicontrol">Content</span> boxes.</p>
+              </div>
+            </aside>
+          </li>
+          <li purpose="step" id="ESRI_STEP_16"><span purpose="cmd" id="GUID-8A052CFC-CF5F-44DB-96DD-67E2F910F36C">Optionally add search relate(s) to your search by clicking the <span class="uicontrol">Add Relate</span> link.</span>
+            <div class="stepresult" purpose="stepresult">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-5C8F5547-FF5D-4F52-9784-0061423C9EE9-web.png" purpose="img" alt="Add Relate" title="Add Relate">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-388C8812-7C56-4E5E-9D2B-7D986C00D13B">Give the Relate an alias and add the fields you want to appear in the results.</p>
+            </div>
+            <h3></h3>
+            <aside class="note" id="GUID-C5A6BB8A-2727-4C2E-8229-6AB1E6AA1FB6">
+              <h5 class="icon-lightbulb">Tip:</h5>
+              <div class="note-content">
+                <p id="GUID-681F3AEC-C168-46EB-9BA3-4B28696C6162">Your layer needs to have relationships available in the REST end point for them to be shown as an option here.</p>
+              </div>
+            </aside>
+            <div class="stepinfo" purpose="stepinfo">
+              <span purpose="cmd" id="GUID-F45E80D2-A352-4FFA-A242-193C44CDD310">Select individual fields from the <span class="uicontrol">Available Fields</span> grid and click the <span class="uicontrol">Include</span> button or just click the <span class="uicontrol">Include All</span> button to add all the available fields to the <span class="uicontrol">Included Fields</span> grid.</span>
+              <h3></h3>
+              <aside class="note" id="GUID-D8B5C00B-F9EA-42BF-8EEF-520844CD9596">
+                <h5 class="icon-lightbulb">Tip:</h5>
+                <div class="note-content">
+                  <p id="GUID-079EA8E2-3344-4CAD-BF2A-AB8F3269507D">For number and date fields an edit button will be present to allow you to edit the format of that fields data and set if the field will be a sum field.</p>
+                </div>
+              </aside>
+              <div class="stepresult" purpose="stepresult">
+                <div class="image" purpose="image">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img class="break" src="images/GUID-BB2BD87C-4781-4CD8-8BB3-999AD260D153-web.png" purpose="img" alt="Choose fields" title="Choose fields">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="stepresult" purpose="stepresult">
+                <div class="image" purpose="image">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img class="break" src="images/GUID-5FECBB2D-07FC-41A0-B144-25038B21428E-web.png" purpose="img" alt="Format field" title="Format field">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_17"><span purpose="cmd" id="GUID-74057DE4-BA9B-49D7-A3D0-B1AF303F5F80">Click <span class="uicontrol">Add Expression</span> to display the individual expression dialog.</span>
+            <div class="info" purpose="info">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-5A4CFD02-B9E2-4ACA-AC74-596E298D2EE0-web.png" purpose="img" alt="Expressions" title="Expressions">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p id="GUID-760dbdac-b04a-4289-a274-470a2f9565e2">Enter an <span class="uicontrol">Expression Alias</span> and a <span class="uicontrol">Search Label</span>
+              </p>
+              <h3></h3>
+              <aside class="note" id="GUID-7a6224ec-bf36-493e-8a5e-83250f377d41">
+                <h5 class="icon-lightbulb">Tip:</h5>
+                <div class="note-content">
+                  <p id="GUID-062bde6d-31ab-4e10-ad29-918006246419">Use the prompts in the text boxes as clues for what to enter.</p>
+                </div>
+              </aside>
+              <p id="GUID-d973abda-ca98-4007-b3db-940f5b2f0b6d">Next click the <span class="uicontrol">Add Expression Value</span> to display the expression value builder.</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-3f892b33-d215-4847-872d-d8742d21b29f-web.png" purpose="img" alt="Expression Value" title="Expression Value">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_18"><span purpose="cmd" id="GUID-B6141F85-BB43-4161-9BD0-281789540CE0">Select a search field, an operation, and provide a value in the text box. Optionally, check the <span class="uicontrol">Unique</span> option to list all unique values for the selected field in the data layer. This option is handy when your selected field is a string or number. You can also use the <span class="uicontrol">Predefined</span> option that allows you at build a list of predefined values for the user to choose from (option only available if <span class="uicontrol">Ask for values</span> is checked).</span>
+            <aside class="note" id="GUID-FEC00492-8BEB-401E-B2DB-F3CCBBEE8E6B">
+              <h5 class="icon-notebook">Note:</h5>
+              <div class="note-content">
+                <p id="GUID-a3081c0a-f1c3-4212-90af-fef592e4ea49">If your field choice is a field that uses a domain then the domain values will automatically be displayed in a dropdown list during configuration and in the widget UI when the widget is used. The same is true for the <span class="uicontrol">Unique</span> option, the widget will query the map service for unique values to populate the dropdown with in the widget.</p>
+              </div>
+            </aside>
+            <!--<div class="notes" id="GUID-70fb86fa-e833-4033-bbad-2012e1052aec">
+              <div class="caution">
+                <img class="note_img" src="rsrc/caution.png" alt="Caution" title="Caution"><span>Caution:</span>
+              </div>
+              <div class="note-content">
+                <p id="GUID-9d7265d1-0675-480f-9345-d4bcb5dc9717">Although the <span class="uicontrol">SQL Statement</span> is editable in the dialog you should not edit this unless you understand SQL syntax and need to do some advanced SQL that is not available in the user interface.</p>
+              </div>
+            </div>-->
+            <div class="stepinfo" purpose="stepinfo">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-853f7737-02d8-4edd-8592-483864fd9323-web.png" purpose="img" alt="Select Unique option" title="Select Unique option">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+           <!--  <div class="stepinfo" purpose="stepinfo">You can check the <span class="uicontrol">Value is required to be entered to enable search</span> -->option and this will force the use of this expression value. If this option is not checked and the user does not enter a value, then this portion of the expression will not be used in the final SQL that is submitted to the server.</div>
+            <div class="stepinfo" purpose="stepinfo">You can also use the <span class="uicontrol">Predefined</span> option that allows you at build a list of predefined values for the user to choose from.</div>
+            <div class="stepinfo" purpose="stepinfo" id="GUID-bb63ba01-f1a0-42dc-8659-9cbfc298628a">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-6915c5b8-8572-4e46-9f18-445da342782d-web.png" purpose="img" alt="Select Predefined option" title="Select Predefined option">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="stepinfo" purpose="stepinfo">Click the <span class="uicontrol">Add List Value</span> button to add a row to the <span class="uicontrol">Predefined Value(s)</span> grid. To add the text to the new row that was created, double click the row and enter your predefined value into the textbox.</div>
+            <h3></h3>
+            <aside class="note" id="GUID-44f43544-f351-473a-ad9b-4d6fac701fe4">
+              <h5 class="icon-lightbulb">Tip:</h5>
+              <div class="note-content">
+                <p id="GUID-5559661a-5261-43eb-a40a-4aee3328ac97">When you have completed entering the predefined value just click anywhere outside the textbox.</p>
+              </div>
+            </aside>
+
+            <div class="stepinfo" purpose="stepinfo" id="9cec0287-4168-4c36-b039-f84f6a9bc87a">If you are searching a date range <span class="uicontrol">is between</span> or <span class="uicontrol">is not between</span> then you can specify that the start date (by default the current date) have a defined number of days subtracted from it.
+              By checking the <span class="uicontrol">Start Date is current date minus</span> and entering a number of days the date range can be set to be a certain date span (i.e the last 30 days).</div>
+            <div class="stepinfo" purpose="stepinfo" id="GUID-af0e04a7-fb06-4cda-9bd2-d32c5f0f2a51">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-1d30f43c-a82e-4912-a6e4-4d4068736b9e-web.png" purpose="img" alt="Date span" title="date span">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_19"><span purpose="cmd" id="GUID-A8F37A06-32EE-4F22-9C4E-3FEB866B1014">Optionally, check <span class="uicontrol">Ask for values</span>.</span>
+            <div class="stepinfo" purpose="stepinfo">When this option is checked, your input value is the default query value and you have the choice of providing a new value to overwrite the default value at run time.
+              <aside class="note" id="GUID-DC737757-A96F-49A9-A114-E942E2AD08F6">
+                <h5 class="icon-notebook">Note:</h5>
+                <div class="note-content">
+                  <p id="GUID-E2203074-69FA-41D0-B1D9-30D805932F50">when this option is checked, provide both prompt texts and hint texts to save the query successfully; otherwise, an error message displays.</p>
+                </div>
+              </aside>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_20"><span purpose="cmd" id="GUID-c4d309a2-f3d9-4931-a246-2355b7a1802c">Click <span class="uicontrol">OK</span> to complete the adding the expression value step.</span>
+            <h3></h3>
+            <aside class="note" id="GUID-848e5989-ad5b-4804-9bbf-bdd78fcbaece">
+              <h5 class="icon-notebook">Note:</h5>
+              <div class="note-content">
+                <p id="GUID-9a90705d-78b7-4f3d-9a5a-3998c6404d33">At this time you can add additional expression values.</p>
+              </div>
+            </aside>
+            <div class="stepinfo" purpose="stepinfo">If you choose to add more than one expression value then subsequent adds will have a new option on the dialog. At the top of the dialog you will find text and a drop down choice. Depending on if All or Any of the values in the defined expression are true, either records meeting all the values or records meeting any of the values in the expression are returned in the results.</div>
+            <div class="stepinfo" purpose="stepinfo" id="GUID-44ca3499-54cd-40cf-a592-097359c9e12e">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-c6bd59de-dcad-4a0a-a77e-a51e479db41c-web.png" purpose="img" alt="Subsequent Expression Value" title="Subsequent Expression Value">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_21"><span purpose="cmd" id="GUID-9DABF942-C536-4AA8-B20D-064FCDB9B1D2">Click <span class="uicontrol">OK</span> to complete the adding the expressions step.</span>
+          </li>
+          <li purpose="step" id="ESRI_STEP_22"><span purpose="cmd" id="GUID-DAEDA790-BEC3-41C4-B077-E11C1AFC7907">Click <span class="uicontrol">OK</span> to complete the adding the search layer step.</span>
+          </li>
+          <li purpose="step" id="ESRI_STEP_23"><span purpose="cmd" id="GUID-52E79940-A4A1-4CEB-BA5B-6782B5465BA2">Click <span class="uicontrol">OK</span> to complete the adding the search step.</span>
+          </li>
+
+          <li purpose="step" id="ESRI_STEP_24"><span purpose="cmd" id="GUID-43431E18-3AA7-4C19-8359-A4C8D922658D">Optionally, click the <span class="uicontrol">Edit General Settings</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-821729c2-0873-4dd0-aed0-25db5f588366-web.png" purpose="img" alt="General Widget Options" title="General Widget Options">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <aside class="note" id="GUID-4A7DFFA70-B85C-4114-ABBA-61AE11D4E296">
+              <h5 class="icon-caution-cone">Warning:</h5>
+              <div class="note-content">
+                <p id="GUID-756515D5-B324-41F3-A51E-A2F946B1C4B3">If you frequently edit a layer that is uses the unique values option, then you will want to check the <span class="uicontrol">Disable Unique Values Caching</span> option to prevent a situation where the gathering of unique values can hang after editing that layer.</p>
+              </div>
+            </aside>
+          </li>
+
+          <li purpose="step" id="ESRI_STEP_25"><span purpose="cmd" id="GUID-B1AEA01A-1E78-447B-BCE5-A15C128AFAA1">Optionally, click the <span class="uicontrol">Edit Default Search Symbology</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-5ab33374-c962-4d4d-bc94-e42e4c96327e">The default symbology dialog opens, allowing you to choose the color and style for the search result symbol if the map service to not return this information.</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-e1bb154c-9291-4f75-aadf-6919e79258ba-web.png" purpose="img" alt="Select symbol in results setting" title="Select symbol in results setting">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_26"><span purpose="cmd" id="GUID-809F2F89-48F0-442C-8DCE-C7BA8D75C41A">Optionally, click the <span class="uicontrol">Edit Default Buffer Properties</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-CB41395D-B1A9-4A71-BB61-23A395C1DAA9">The default buffer properties dialog opens, allowing you to choose the color and style for the buffer symbol, the buffer units, the WKID of the buffer, the default buffer distance, and whether the buffer layer is added to the legend (and thus print output).</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-355E4C92-6161-447A-BBD2-0A3C00A62E0D-web.png" purpose="img" alt="Buffer Unit Properties" title="Buffer Unit Properties">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_27"><span purpose="cmd" id="GUID-68AA7FED-9AAB-4F62-8DAE-5705166D27B5">Optionally, click the <span class="uicontrol">Edit Spatial Search Properties</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-20FD0F73-D1CC-4258-B8C3-75ADCFC6EC50">The spatial search properties dialog opens, allowing you to choose from a list of available spatial search operations that will be made available to the user in the widget.</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-64F7C9FE-78AF-4D16-9139-323ACA63D3FD-web.png" purpose="img" alt="Spatial Search Properties" title="Spatial Search Properties">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_28"><span purpose="cmd" id="GUID-61FA0C50-AA78-41D7-87A6-4EFE21C31E58">Optionally, click the <span class="uicontrol">Edit Graphical Search Options</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-0428667D-B2AD-4A52-9547-3D87675C63FF">The graphical search options dialog opens, allowing you to choose from a list of available graphical search drawing tools that will be made available to the user in the widget.</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-525FDCDE-12DD-4D00-BFAB-FD44855D34A2-web.png" purpose="img" alt="Graphical Search Options" title="Graphical Search Options">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_29"><span purpose="cmd" id="GUID-2775E34E-8F46-4339-A2A5-25E2DDF43CDE">Optionally, click the <span class="uicontrol">Edit Disabled Tab(s)</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-61DF6AFA-1C45-4F8B-9EDD-C6D4BFEC88DD">The disabled tab(s) dialog opens, allowing you to choose from a list of tabs that you want to disable to the user in the widget.</p>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-1222BB1B-7A8A-4B3E-8989-315ACAD13417-web.png" purpose="img" alt="Disabled Tabs" title="Disabled Tabs">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_30"><span purpose="cmd" id="GUID-F5DB0BCB-AA87-4E02-BF3B-465B4194204F">Optionally, you can customize the No results text that is displayed by editing the noResults property of the widgets nls/strings.js file to add additional instructions/HTML text or links.<br>This is beneficial when you need to provide further guidance to the end user on what to do if their search does not produce any results. See the blow example and result.</span>
+            <div class="stepresult" purpose="stepresult">
+              <aside class="note" id="GUID-D2D9DAC7-F604-48D1-B928-F58901A9B276">
+                <h5 class="icon-notebook">Example:</h5>
+                <div class="note-content">
+                  <p id="GUID-A4E423BF-FFD9-482C-AE6B-C271B8987425">noResults: "No results. &lt;br&gt;Please visit the County Assessor's site (link) for more information on your property.&lt;br&gt;Link: &lt;a href='http://www.esri.com' target='_blank'&gt;http://www.esri.com&lt;/a&gt;"</p>
+                </div>
+              </aside>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-B5005CE6-6086-448D-B8BF-4FD1437ED3D7-web.png" purpose="img" alt="No Results" title="No Results">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_31"><span purpose="cmd" id="GUID-f3b26fb6-a30b-4d95-b4d8-a1a15a84cac6">Optionally, click the <span class="uicontrol">Edit Result Formatting</span>.</span>
+            <div class="stepresult" purpose="stepresult">
+              <p id="GUID-cdda7968-9bd0-4837-82c6-0dc0da88c8bc">The result formatting dialog opens, allowing you to choose the color and style for the identify result text.</p>
+              <h3></h3>
+              <aside class="note" id="GUID-1dfeda93-ba51-4008-b4b7-5ee1fe3c6871">
+                <h5 class="icon-caution-cone">Warning:</h5>
+                <div class="note-content">
+                  <p id="GUID-4e66370e-5610-4232-ac3f-6cba9073df9d">If you are using the Dart Theme the text color specified for the results will not be honored as the Dart Theme will always override the text color to white. This is a Dart Theme feature and limitation to the results formatting.</p>
+                </div>
+              </aside>
+              <div class="image" purpose="image">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="break" src="images/GUID-cdda7968-9bd0-4837-82c6-0dc0da88c8bc-web.png" purpose="img" alt="Result Formatting" title="Result Formatting">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li purpose="step" id="ESRI_STEP_32"><span purpose="cmd" id="GUID-8c89d544-87e1-4288-8767-3da9fcf86b77">Click the <span class="uicontrol">OK</span> to complete the widgets configuration.</span>
+          </li>
+        </ol>
+    </div>
+    <div class="section1" id="ESRI_SECTION1_93B7EEDFDDDB4389B1F994E7792FF6DA" purpose="section1">
+      <h2>Using the Enhanced Search widget</h2>
+      <p id="GUID-cf0dde68-43ef-47d4-a4ca-10ea6c53ab9b">Clicking the Enhanced Search widget in your application displays the widget. Depending on the <span class="uicontrol">Initial View</span> choice that was made during configuration the <span class="uicontrol">By Attribute</span> or the <span class="uicontrol">By Shape</span> view will be visible.</p>
+      <h4 id="GUID-E5AA1E1B-FE95-4DC4-A606-304439703320">By Attribute</h4>
+      <p id="GUID-d916c6a7-43d1-454f-b7ef-1e06e460a6fd">The <span class="uicontrol">By Attribute</span> view has a dropdown list of predefined search layers. Selecting a search layer updates the dropdown list of search aliases for that layer (search expressions):</p>
+      <div class="image" purpose="image" id="GUID-f7671a55-6631-4476-a257-e51668d33e2a">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="break" src="images/GUID-CFEFB435-3107-405F-AD7E-E0EA8597CC19-web.png" purpose="img" alt="List of searches" title="List of searches">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul purpose="ul" id="UL_4D138CDA7FFF4E5183E9B17532C8A48D">
+        <li purpose="li" id="LI_165C431FD2BC43B2BDBD54F40BA0D52B">If the search was configured to use <span class="uicontrol">Unique</span> then a dropdown list will be presented of all unique values for the configured field. A progress indicator will be presented to show that the widget is busy working with the unique values as highlight in the image above.</li>
+        <aside class="note" id="GUID-C25A9448-664B-4378-8B67-0294C2FFA504">
+          <h5 class="icon-notebook">Note:</h5>
+          <div class="note-content">
+            <p id="GUID-075F5B9E-1896-4922-8674-946A06FC6AFE">Version 2.9 enhanced the unique value paging to perform much faster if the number of unique vales does not exceed the map services maxRecordCount.</p>
+          </div>
+        </aside>
+        <li purpose="li" id="LI_8A1B3FB0862B47219229729AC31A174D">If <span class="uicontrol">Ask for values</span> is specified at configuration time, a text box displays prompting you for new value for the parameter. The default value shows in the box initially.</li>
+        <li purpose="li" id="LI_FD66C3D85A6C4F338963A18AE78C4B00">If the configured search uses a field that has a domain then a dropdown with all coded values will be presented.</li>
+        <li purpose="li" id="LI_73986442E6ED48D1A573F17B9FAAB55B">If the configured search was a range then two textboxes or date selectors will be presented.</li>
+        <li purpose="li" id="LI_A711B0CC7EBA4F0FA1F0A7F3C253758D">If you check the <span class="uicontrol">Limit results to maps extent.</span> then the search results will be limited to features that intersect the maps current extent.</li>
+        <li purpose="li" id="LI_1AD722F0FF9042A0BDD2D84CD909C566">If you checked the <span class="uicontrol">Value is required to be entered to enable search</span> then the required expression value will be indicated with "*Required".</li>
+        <li purpose="li" id="LI_984508E09D0D43B480D4514B421D8E6B">If the expression value is defined as unique values or the field has a coded domain then the drop down list will not contain a blank value like it does when the field is not required.</li>
+      </ul>
+      <div class="image" purpose="image">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="break" src="images/GUID-BB154476-8235-425C-8D51-51C889BECFC6-web.png" purpose="img" alt="Date options" title="Date options">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="GUID-139DB114-A018-4CC7-B252-82457E423C18">By default all searches create a new result set. But to change the selection dropdown to Add or Remove the search results from the current result set.</p>
+      <div class="image" purpose="image">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="break" src="images/GUID-AA2073F6-BEC0-4B9A-8C85-D93D4B5FB14B-web.png" purpose="img" alt="add and remove options" title="add and remove options">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h4 id="GUID-DABC3A28-3643-47CA-B2EB-86354F8D79E8">By Shape</h4>
+      <p id="GUID-69FDA0DF-9504-46EB-9906-956E62420F9B">The <span class="uicontrol">By Shape</span> view has a dropdown list of predefined search layers and draw tools for drawing on the map to search for features that intersect the drawn graphics.</p>
+      <div class="image" purpose="image">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="break" src="images/GUID-D81A5941-E1B1-4A4C-98A1-1679DC791FF0-web.png" purpose="img" alt="Search By Shape" title="Search By Shape">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul purpose="ul" id="UL_1CF67CCABA0A4067BBCFA540A43E334F">
+        <li purpose="li" id="LI_BAA1F8EAC29D4DDB8EB80767F2E999F2">If you check on the <span class="uicontrol">enable multi-part graphics</span> then when you complete drawing on graphic you and can continue to draw the same geometry type and once you have drawn all the graphics you wish to search by then you can click Search to execute the search.</li>
+        <li purpose="li" id="LI_9EC0EFC213BB4E6EBA99FDA211D611A0">If you don't check on the <span class="uicontrol">enable multi-part graphics</span> then when you complete drawing on graphic the search is automatically executed.</li>
+        <li purpose="li" id="LI_A54A3C6509824364BFA1350AA4429255">If you choose the point graphic draw tool and are attempting to search for line or point feature then you should use the <span class="uicontrol">Add search tolerance to point selection</span>.</li>
+        <li purpose="li" id="LI_BBEB2FB798B542D49D3E5DFE55E10844">If you choose you can buffer the graphics after it is drawn but before the search occurs by checking the  <span class="uicontrol">Buffer Graphic</span> checkbox and adjusting the distance and units if desired.</li>
+        <li purpose="li" id="LI_7EE86385E22446F6B668B4FD182CB4C2">If you choose to enable <span class="uicontrol">eLocate Widget Graphics</span> in the <span class="uicontrol">Edit Graphical Search Options</span> dialog then when you have eLocate result graphics added to the map the eLocate button will appear as a graphical search option.</li>
+        <li purpose="li" id="LI_1EC7FE78E3A64C04883225C9D99DDD38">If you choose to add or remove from the current search results using graphical searches as well as By Value searches.</li>
+      </ul>
+      <h4 id="GUID-B1D6D396-03D9-4DFA-9436-C4C3E87D8C52">By Spatial</h4>
+      <p id="GUID-97749F45-8AB6-4A6C-89EE-30887A179071">The <span class="uicontrol">By Spatial</span> view has buffering options, a dropdown list of predefined search layers and spatial operation buttons.</p>
+      <h3></h3>
+      <aside class="note" id="GUID-85232306-6B5C-498A-BFE3-ACDE8F0CDD64">
+        <h5 class="icon-notebook">Note:</h5>
+        <div class="note-content">
+          <p id="GUID-A4E423BF-FFD9-482C-AE6B-C271B8987425">If you have not configured at least one layer with the <span class="uicontrol">Spatial Search Layer</span> option checked then this whole <span class="uicontrol">By Spatial</span> tab will not be visible in the widget at runtime.</p>
+        </div>
+      </aside>
+      <div class="image" purpose="image">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="break" src="images/GUID-3F89FE62-BAF8-4658-B74A-0DB6F24E480A-web.png" purpose="img" alt="Spatial Search View" title="Spatial Search View">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul purpose="ul" id="UL_B23CB46DF5DD405FADAED51904C47C37">
+        <li purpose="li" id="LI_52472104A383485BAE491524F2A52F7F">If have already completed an attribute or graphical search then you can use the spatial search to search for other features that have a spatial relationship to your previous search results.</li>
+        <li purpose="li" id="LI_C1DBEBAD2899428CB2E42B96CC99423E">If you click the <span class="uicontrol">Apply Buffer</span> button than a buffer will be added around your existing search results. This buffer can be used as the geometry of your spatial search instead of the existing search results geometries.</li>
+        <li purpose="li" id="LI_4C088AE4EDFE43AC8B43680C4DFCD363">Choose the layer that you will search for the spatial relationship with your existing search results or buffer.</li>
+        <li purpose="li" id="LI_B89B196508CE4CF4B02AF8FA1B64084E">Finally select the spatial relationship button that you want to execute. (i.e. entirely contained in).</li>
+        <li purpose="li" id="LI_156D6CD1398B4D3A8BC03D823588525F">A common workflow for using the <span class="uicontrol">By Spatial</span> search would be to search for a parcel and determine the parcels that are within 1000 feet of the original parcel. To do this you would follow these steps:
+          <ol>
+            <li purpose="li" id="LI_6238D1CB0BFE452198487DF256F7A620">Search a parcel layer by owner name using the <span class="uicontrol">By Attribute</span> Search.</li>
+            <li purpose="li" id="LI_C5C419397671489293C1FE69A1A014D7">Switch to the <span class="uicontrol">By Spatial</span> view and buffer that result by 1000 feet.</li>
+            <li purpose="li" id="A93BCB101746494D9AD7C6450E6AF383">Select the parcel layer from the drop down layer list and click the <span class="uicontrol">intersected by</span> button.</li>
+          </ol>
+        </li>
+      </ul>
+      <h4 id="GUID-214604C0-0CF2-480A-A9FD-BAF0F453BCA8">Results</h4>
+      <p id="GUID-46B62BF1-FEBC-40EC-8E48-3837D95AD626">The <span class="uicontrol">Results</span> view displays the features returned from the search, and use an alternating color scheme.</p>
+      <div class="image" purpose="image">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="break" src="images/GUID-8357A335-A6BC-4B8A-9DDC-704BD1916337-web.png" purpose="img" alt="List of search results" title="List of search results">
+              </td>
+              <td>
+                <img class="break" src="images/GUID-DFFA6994-6008-4188-B75E-D0DF406D8B7E-web.png" purpose="img" alt="List of search results" title="List of search results">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul purpose="ul" id="UL_86B3446E1BCE4D85B1AF6EF825C7F9F8">
+        <li purpose="li" id="LI_060B912CBBA34C5CAA8A797C611DC02D">Click on an individual search result will zoom the map to that result and display the popup for that result.</li>
+        <li purpose="li" id="LI_A60F5A149F8A4343903A80F5116C19D7">If the results layer has links configured than the link text or link image will appears in the results.</li>
+        <li>&nbsp;<li>
+        <li purpose="li" id="LI_A497884416CD4D1CB7D087FE69785334">The <span class="uicontrol">ellipses</span> button is new to WAB 2.1 and brings up a menu of result actions you can perfrom.</li>
+        <li purpose="li" id="LI_1DD1062900124FBCAD980377C448A58D">The <span class="uicontrol">Zoom to</span> command will zoom the map to the extent of all the returned results.</li>
+        <li purpose="li" id="LI_32525A1C2C1B406AA78411A521605BFE">The <span class="uicontrol">Pan to</span> command will pan the map to the extent of all the returned results.</li>
+        <li purpose="li" id="LI_D89FA439EEAA4C53848D7FA59B324D83">The <span class="uicontrol">Flash</span> command will flash all the returned results on the map.</li>
+        <li purpose="li" id="LI_5B604F2FDEA74F2184BE6A78F7DE0521">The <span class="uicontrol">Export to Feature Collection</span> command will export the search results to a Feature Collection JSON file.</li>
+        <li purpose="li" id="LI_8F59FD32D8054CC580EC02F42C3D1C8D">The <span class="uicontrol">Export to GeoJSON</span> command will export the search results to a GeoJSON file.</li>
+        <li purpose="li" id="LI_366B0F73A36A4B1BA7AE109966135AFB">The <span class="uicontrol">Save to My Content</span> command will save this feature to your orgs "My Content".</li>
+        <li purpose="li" id="LI_7C728764BD6C4BBCB773D3F3C52FF2B6">The <span class="uicontrol">Statistics...</span> command will show a statistics window for numeric field in the result feature.</li>
+        <li purpose="li" id="LI_C31961308B7E4BB5BFBD1539E3A99718">The <span class="uicontrol">View in Attribute Table</span> command open and send the search results to the Atribute Table widget.</li>
+        <li purpose="li" id="LI_CA73B435DDE541BEB1BA1C5185F61CC3">The <span class="uicontrol">Show Relates</span> command opens and sends the search relates to the Atribute Table widget.</li>
+        <li purpose="li" id="LI_2269EEF06F0748AE8F6010B10816416C">The <span class="uicontrol">Export to CSV file</span> command will export the search results to a CSV file.</li>
+        <li purpose="li" id="LI_25CE9B16CE6248C69DFC816439D27800">The <span class="uicontrol">Export Search URL</span> command will take the search options used in an attribute search and export the URL for this search that can be shared with others.</li>
+        <li purpose="li" id="LI_B76D1A66EBB8452CA20BFC23B1755862">The <span class="uicontrol">Clear Buffer</span> command (when present) will remove the buffer graphic from the map.</li>
+        <li purpose="li" id="LI_44C53A7354E94623BCA1ECD0D8BFE058">The <span class="uicontrol">Clear Results</span> command will remove all the returned results from the map and the widget.</li>
+        <li purpose="li" id="LI_25078997DDDA4396BB76045785E94887">The <span class="uicontrol">Clear Relates</span> command (when present) will remove the relate(s) from the map and Attribute Table.</li>
+        <div class="image" purpose="image">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img class="break" src="images/GUID-36917B1D-AB41-4B7F-A541-FE5C18234958-web.png" purpose="img" alt="Export search URL" title="Export search URL">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="note" id="GUID-DE96A1A6-7CF6-4BE2-A1FC-7EA25C1AA0DC">
+          <h5 class="icon-notebook">Note:</h5>
+          <div class="note-content">
+            <p id="GUID-994D9461-750B-4028-AFDE-51F8908D5C7C">The <span class="uicontrol">Export Search URL</span> link will not work if you have not deployed your WAB App to a web server yet and are still using a url like http://machinename:3344/webappbuilder/apps/[App#]. It needs a deployed URL like http://gis.calhouncounty.org/WAB/V1.3/widgets/eSearch/.</p>
+          </div>
+        </aside>
+        <br>
+        <li purpose="li" id="LI_B3076F8290DD40A39F96B870B3E360E9">If you have configured a field or fields to be summed then the value of the first sum field will be shown at the bottom of the results list. If you configured more than one field then the More...
+           option will be shown and when clicked a message box will appear with all the summary results.</li>
+        <div class="image" purpose="image">
+         <table>
+           <tbody>
+             <tr>
+               <td>
+                 <img class="break" src="images/GUID-03D3B2DF-EC7F-4DE6-B2DB-FA8E11FB0444-web.png" purpose="img" alt="Summary Results" title="Summary Results">
+               </td>
+             </tr>
+           </tbody>
+         </table>
+        </div>
+      </ul>
+      <aside class="note" id="GUID-A2392E4C-2B95-4E8C-A700-692B2F859DCC">
+        <h5 class="icon-notebook">Note:</h5>
+        <div class="note-content">
+          <p id="GUID-385C356C-E2C9-4845-8E73-22BF5CDC1968">If the option <span class="uicontrol">Add result as operational layer</span> was chosen during configuration, then the clear button will remove the layer from the map. If you do not click clear and you close the widget the search results layer will remain in the map until you click clear on this widget.</p>
+        </div>
+      </aside>
+      <h4 id="GUID-ECDFB290-706C-4609-B74A-4F88B552A73C">URL Search</h4>
+      <p id="GUID-E7A6E09A-F3B7-40DA-BA99-8F1F6BF5584A">The <span class="uicontrol">URL Search</span> capability can be used by following these guidelines</p>
+      <ul purpose="ul" id="UL_248D8C46EBA84F77B81330EF284CF2B6">
+        <li purpose="li" id="LI_AD477C24D4894855BC9B00CE03055A4D">Add the "?" to the url if it does not already have one in the url (if it does then start with "&amp;" instead. Here is an example: ?esearch=1805162001006&amp;slayer=0&amp;exprnum=1</li>
+        <li purpose="li" id="LI_58E7ABA75E9243769C4A4A1B0D7AD8CB">The <span class="uicontrol">esearch</span> parameter needs to be lower case and followed by the equal sign and then the actual search text/number/date or range of dates or numbers.</li>
+        <li purpose="li" id="LI_770162665C0345158ADF2135E859AC41">The <span class="uicontrol">esearch</span> parameter can have more than one search text/number/date if they are separated by a pipe character "|". Here is an example ?esearch=SPECIAL|WATERFRONT&amp;slayer=1&amp;exprnum=0</li>
+        <li purpose="li" id="LI_B6BD15509DAC4B219AAA471F77FC8209">The <span class="uicontrol">esearch</span> parameter can contain a range, like a date range, if they are separated by a tilde character "~". Here is an example ?esearch=2014-11-10~2014-11-17&amp;slayer=2&amp;exprnum=0</li>
+        <li purpose="li" id="LI_63961D3CEF5E44139B25A9479F371695">The <span class="uicontrol">esearch</span> has three special key words that can be used for date searches. These key words do what thier names suggest:
+          <ol>
+            <li><em>last48</em> - take the current date and select the last 48 hours from the current date.</li>
+            <li><em>thismonth</em> - take the current date and select the last month from the current date.</li>
+            <li><em>thisyear</em> - take the current date and select the last year from the current date.</li>
+          </ol>
+        </li>
+        <li purpose="li" id="LI_8B2E371C051340B8BB48E6CFD7ED2CA5">After the <span class="uicontrol">esearch</span> parameter add an ampersand and then the <span class="uicontrol">slayer</span> parameter and equals sign followed by the search layer id number. The search layer number is simply the number of the search layer that is configured in the widget and is zero based, so the first search layer in the widget is zero. Here is an example: &amp;slayer=2</li>
+        <li purpose="li" id="LI_7E66484FA94C4B2D949A14AF3902A0AA">After the <span class="uicontrol">slayer</span> parameter, add an ampersand and then the <span class="uicontrol">exprnum</span> parameter and equals sign followed by the expression id number. The expression id number is simply the number of the expression that is configured in the widget and is zero based, so the first expression in the widget is zero. Here is an example: &amp;exprnum=0</li>
+        <li purpose="li" id="LI_3D9DDDBAF3864285943705E2CF62DB26">After the <span class="uicontrol">exprnum</span> parameter, you can optionally add an ampersand and then the <span class="uicontrol">close</span> parameter and equals sign followed by true. The close parameter will close the eSearch widget once the URL search is done executing. Here is an example: &amp;close=true. This is useful if you want the search results added to the map and/or Attribute Table Widget and do not need the eSearch widget visible after that.</li>
+        <li purpose="li" id="LI_B0DCE6E4D76647FBBCC64604D8ACC4B0">The widget must be set to "open at start" in order for the widget to execute the search when the app starts.</li>
+        <li purpose="li" id="LI_A6F07FE0CC624442A3C673CD57ADC897">To set the widget to "open at start" just click the lower left coner of the widget icon as indicated below.</li>
+        <div class="image" purpose="image">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="break" src="images/GUID-BE7AB172-CE10-4C97-A5EF-4770E57B1A66-web.png" purpose="img" alt="Open at start" title="Open at start">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </ul>
+    <aside class="note" id="GUID-377B3749-10E2-4BCE-BD37-F8A12A767891">
+      <h5 class="icon-notebook">Note:</h5>
+      <div class="note-content">
+        <p id="GUID-3FEF5FA1-BBEF-4000-958D-1853C9B65461">Version 1.1.x and above of my widgets now contain the ability for you to determine the version number of the widget at runtime. Hold the Alt key and click anywhere on the widget and a message will appear with widget version details.</p>
+      </div>
+    </aside>
+    <aside class="note" id="GUID-511C35EB-3D2F-40FB-998A-8EE559EA30FB">
+      <h5 class="icon-caution-cone">Warning:</h5>
+      <div class="note-content">
+        <p id="GUID-3E90AA2C-AB63-4B42-B262-6360C5D4113D">Once your app is deployed to your web server the widget no longer has access to the Node JS proxy and therefore some searches may fail due to the size of the query request. In order to prevent this type of search failure you need to deploy a Proxy to your web server. You simply need to go to the <a href="https://github.com/Esri/resource-proxy">Esri/resource-proxy · GitHub</a> website and download the proxy and follow the instructions in the readme for the web server version you are using (i.e. IIS on a windows machine means you use the DotNet proxy). Once you have the proxy setup on your web server, all you need to do is add the URL to the apps config.json file in the httpProxy object.</p>
+      </div>
+    </aside>
+    </div>
+    <section class="section1 padded-anchor" id="ESRI_SECTION1_49F7CC0972264BBAB0CBE89DB59632C2" purpose="section1">
+      <h2>What's New in version 2.x</h2>
+      <p id="GUID-5d2b0cda-5057-4a95-a51b-6855a787f859">This is what's new.</p>
+      <ul>
+        <li id="GUID-bc1ab4dc-f8f8-4df3-bcff-6dfd1a027efe">
+          <a href="#LI_63961D3CEF5E44139B25A9479F371695">v2.1 - Added three new URL Search keywords dealing with date searches.</a></li>
+        <li id="GUID-6a10ed7c-416c-4920-b856-697ef297f901">
+          <a href="#GUID-46B62BF1-FEBC-40EC-8E48-3837D95AD626">v2.1 - New results actions menu.</a></li>
+        <li id="GUID-de4c0475-e1ca-4af1-9118-17be4a5e538f">
+          <a href="#GUID-46B62BF1-FEBC-40EC-8E48-3837D95AD626">v2.1 - Pan to search results.</a></li>
+        <li id="GUID-53D5E014-5E2A-4D46-8FEF-222CD494665D">
+          <a href="#GUID-46B62BF1-FEBC-40EC-8E48-3837D95AD626">v2.1 - Flash the search results.</a></li>
+        <li id="GUID-53D5E014-5E2A-4D46-8FEF-222CD494665D">
+          <a href="#GUID-46B62BF1-FEBC-40EC-8E48-3837D95AD626">v2.1 - Export the search results to Feature Collection JSON file.</a></li>
+        <li id="GUID-ef807e58-d82e-4f6d-86bc-1ac08ca956f2">
+          <a href="#GUID-46B62BF1-FEBC-40EC-8E48-3837D95AD626">v2.1 - Export the search results to GeoJSON file.</a></li>
+        <li id="GUID-1eed67c6-4593-4aa7-9c29-d356ba39d75e">v2.1 - Added support to not require a date to be choosen for date searches</li>
+        <li id="GUID-2b1cfde8-44e1-4305-a377-e89cf5462a98">
+          <a href="#GUID-90300752-a0e5-44aa-a2b0-e4601bbcbc31">v2.1.1 - Configure if a numeric field is included in the show Statistics dialog.</a></li>
+        <li id="GUID-356a40c7-c867-4d3d-a5ba-6e96d8a4118d">v2.2 - Added Dutch localization (thanks to Pieterjan Wintjes).</li>
+        <li id="GUID-8C07CB22-B631-4764-9015-51C28A5EC70C">
+          <a href="#ESRI_STEP_13">V2.2.1 - Added layer specific global overrides for zoom to results and disable popups.</a></li>
+        <li id="GUID-4443C59A-E802-43D4-ADAA-A82C3E6CD660">
+          <a href="#ESRI_STEP_28">V2.2.1 - Added default activated graphic tool option.</a></li>
+        <li id="GUID-95D6B9B3-B0CE-49E2-9904-42DD53F1425E">
+          <a href="#GUID-720E6BFA-56E6-4FD3-A050-F7151EEE9A5C">V2.3 - Added show attachments option.</a></li>
+        <li id="GUID-26CEEE24-90F9-4802-A734-825A9CEA94A9">v2.4 - Updated for version 2.4 of WAB.</li>
+        <li id="GUID-26CEEE24-90F9-4802-A734-825A9CEA94A9">v2.4.1 - Updated for WAB on Portal issues.</li>
+        <li id="GUID-2B7BACED-A457-4CE9-80CC-78E07B2FE95B">
+          <a href="#GUID-8A052CFC-CF5F-44DB-96DD-67E2F910F36C">V2.5 - Added Relates.</a></li>
+        <li id="GUID-BB5A3D8A-961A-4787-97CA-363CFCD03916">
+          <a href="#GUID-271A40F4-EC66-4E31-8018-812AFB061917">V2.5 - Hide Null data in widget results and popups.</a></li>
+        <li id="GUID-E5ACCCB1-0C53-47F9-811C-85963643F6F0">
+          <a href="#GUID-43431E18-3AA7-4C19-8359-A4C8D922658D">V2.6.1 - Added configuration option to auto zoom to buffer results, Date Format, Zoom Extent, and if a string contains search uses each word indivdually or the whole string in the SQL.</a></li>
+        <li id="GUID-50180454-F7FF-4C4F-B7AE-2D0A7C724BDA">V2.6.1 - Fixed a large number of relates issues</li>
+        <li id="GUID-A1171133-9AD7-4C3C-8955-71611BDD5A69">V2.7 - Added search result selection highlight</li>
+        <li id="GUID-A2D42852-16C0-4E7B-987A-9DF15E8227B4">V2.9 - Added ability to specify the search layer and or expression in the url parameters without executing a search.</li>
+        <li id="GUID-2E4A5EF8-5297-45BE-9C7A-8269728E07F9">V2.9 - Add ability to have null value in the unique dropdown lists</li>
+        <li id="GUID-AE48B825-59E1-43CE-8902-6FA24ED0580D">V2.9 - Added support for non geographic searches (i.e. tables) !!!This feature is in Beta!!!.</li>
+        <li id="GUID-961855FE-DE2B-469B-B4D1-7CBD1E25545A">V2.9 - Enhanced the unique value paging to perform much faster if the number of unique vales does not exceed the map services maxRecordCount.</li>
+        <li id="GUID-D6243359-E1E6-4C2B-9DB7-2E1EA34C2AC8">V2.11 - Urls inside of attributes are now hyperlinked automatically.</li>
+      </ul>
+    </section>
+    <div class="wfsummary" id="GUID-EDCFDA8C-45C9-4D91-BB50-2DB989635DFA" purpose="wfsummary">
+    </div>
+    <div class="footer">Copyright © 2018 Calhoun County Commission.</div>
+  </section>
+
+</body>
+
+</html>

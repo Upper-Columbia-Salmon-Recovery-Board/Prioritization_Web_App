@@ -1,0 +1,657 @@
+{
+  "layers": [
+    {
+      "name": "Filter by Priority Restoration Reach Name",
+      "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/ArcGIS/rest/services/Priority_Restoration_Reaches_02July2021/FeatureServer/0",
+      "definitionexpression": "",
+      "spatialsearchlayer": true,
+      "export2Csv": true,
+      "export2Geo": false,
+      "export2FC": true,
+      "zoomScale": 10000,
+      "forceZoomScale": false,
+      "shareResult": true,
+      "addToAttrib": true,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Filter by Priority Restoration Reach Name",
+            "textsearchlabel": "Filter by Priority Restoration Reach Name",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "ReachName",
+                    "label": "ReachName",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {
+                    "value": "Big Meadow Creek 01"
+                  },
+                  "prompt": "ReachName is",
+                  "textsearchhint": "Big Meadow Creek 01",
+                  "sqltext": "ReachName = '[value]'",
+                  "operation": "stringOperatorIs",
+                  "uniquevalsfromfield": "ReachName",
+                  "required": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "ReachName",
+            "alias": "ReachName"
+          },
+          {
+            "name": "Basin",
+            "alias": "Basin"
+          },
+          {
+            "name": "Assessment",
+            "alias": "Assessment"
+          },
+          {
+            "name": "RM_Start",
+            "alias": "RM_Start"
+          },
+          {
+            "name": "RM_End",
+            "alias": "RM_End",
+            "isnumber": true
+          },
+          {
+            "name": "SpringChin",
+            "alias": "SpringChin"
+          },
+          {
+            "name": "SteelheadR",
+            "alias": "SteelheadR"
+          },
+          {
+            "name": "BullTroutR",
+            "alias": "BullTroutR"
+          },
+          {
+            "name": "Length_mi",
+            "alias": "Length_mi",
+            "isnumber": true
+          },
+          {
+            "name": "Length_m",
+            "alias": "Length_m",
+            "isnumber": true
+          },
+          {
+            "name": "Reach_Name",
+            "alias": "Reach Name"
+          },
+          {
+            "name": "Basin_1",
+            "alias": "Basin"
+          },
+          {
+            "name": "Assessment_Unit",
+            "alias": "Assessment Unit"
+          },
+          {
+            "name": "Priority_Actions",
+            "alias": "Priority Actions"
+          },
+          {
+            "name": "Reach_Rank",
+            "alias": "Reach Rank"
+          },
+          {
+            "name": "Priority_Species",
+            "alias": "Priority Species"
+          },
+          {
+            "name": "Priority_Life_Stages",
+            "alias": "Priority Life Stages"
+          },
+          {
+            "name": "Unacceptable_Limiting_Factors",
+            "alias": "Unacceptable Limiting Factors"
+          },
+          {
+            "name": "At_Risk_Limiting_Factors",
+            "alias": "At-Risk Limiting Factors"
+          },
+          {
+            "name": "Action_Categories",
+            "alias": "Action Categories"
+          },
+          {
+            "name": "ObjectID",
+            "alias": "ObjectID",
+            "isnumber": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "isnumber": true
+          }
+        ]
+      },
+      "links": {
+        "link": []
+      },
+      "relates": {
+        "relate": []
+      },
+      "orderByFields": [],
+      "showattachments": false,
+      "layersymbolfrom": "layer",
+      "symbology": {
+        "color": [
+          192,
+          80,
+          77,
+          255
+        ],
+        "width": 6.75,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    },
+    {
+      "name": "Filter by Spring Chinook and Priortity Life Stage",
+      "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/ArcGIS/rest/services/Priority_Restoration_Reaches_02July2021/FeatureServer/0",
+      "definitionexpression": "",
+      "spatialsearchlayer": false,
+      "export2Csv": false,
+      "export2Geo": false,
+      "export2FC": false,
+      "zoomScale": 10000,
+      "forceZoomScale": false,
+      "shareResult": false,
+      "addToAttrib": false,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Search by Priority Life Stage",
+            "textsearchlabel": "",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "ReachName",
+                    "label": "ReachName",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {
+                    "value": "Spring Chinook"
+                  },
+                  "prompt": "",
+                  "textsearchhint": "",
+                  "sqltext": "Upper(ReachName) = Upper('Spring Chinook')",
+                  "operation": "stringOperatorIs"
+                },
+                {
+                  "fieldObj": {
+                    "name": "Priority_Life_Stages",
+                    "label": "Priority Life Stages",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {
+                    "value": ""
+                  },
+                  "prompt": "Priority Life Stages contains",
+                  "textsearchhint": "Adult Migration",
+                  "sqltext": "Priority_Life_Stages LIKE '%[value]%'",
+                  "operation": "stringOperatorContains",
+                  "operator": "OR",
+                  "userlist": "Adult Migration|Adult Migration,Fry|Fry,Holding and Maturation|Holding and Maturation,Smolt Outmigration|Smolt Outmigration,Spawning and Incubation|Spawning and Incubation,Summer Rearing|Summer Rearing,Winter Rearing|Winter Rearing"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "ReachName",
+            "alias": "ReachName"
+          },
+          {
+            "name": "Basin",
+            "alias": "Basin"
+          },
+          {
+            "name": "Assessment",
+            "alias": "Assessment"
+          },
+          {
+            "name": "RM_Start",
+            "alias": "RM_Start"
+          },
+          {
+            "name": "RM_End",
+            "alias": "RM_End",
+            "isnumber": true
+          },
+          {
+            "name": "SpringChin",
+            "alias": "SpringChin"
+          },
+          {
+            "name": "SteelheadR",
+            "alias": "SteelheadR"
+          },
+          {
+            "name": "BullTroutR",
+            "alias": "BullTroutR"
+          },
+          {
+            "name": "Length_mi",
+            "alias": "Length_mi",
+            "isnumber": true
+          },
+          {
+            "name": "Length_m",
+            "alias": "Length_m",
+            "isnumber": true
+          },
+          {
+            "name": "Reach_Name",
+            "alias": "Reach Name"
+          },
+          {
+            "name": "Basin_1",
+            "alias": "Basin"
+          },
+          {
+            "name": "Assessment_Unit",
+            "alias": "Assessment Unit"
+          },
+          {
+            "name": "Priority_Actions",
+            "alias": "Priority Actions"
+          },
+          {
+            "name": "Reach_Rank",
+            "alias": "Reach Rank"
+          },
+          {
+            "name": "Priority_Species",
+            "alias": "Priority Species"
+          },
+          {
+            "name": "Priority_Life_Stages",
+            "alias": "Priority Life Stages"
+          },
+          {
+            "name": "Unacceptable_Limiting_Factors",
+            "alias": "Unacceptable Limiting Factors"
+          },
+          {
+            "name": "At_Risk_Limiting_Factors",
+            "alias": "At-Risk Limiting Factors"
+          },
+          {
+            "name": "Action_Categories",
+            "alias": "Action Categories"
+          },
+          {
+            "name": "ObjectID",
+            "alias": "ObjectID",
+            "isnumber": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "isnumber": true
+          }
+        ]
+      },
+      "links": {
+        "link": []
+      },
+      "relates": {
+        "relate": []
+      },
+      "orderByFields": [],
+      "showattachments": false,
+      "autozoomtoresults": false,
+      "layersymbolfrom": "server"
+    },
+    {
+      "name": "Filter by Steelhead and Priority Life Stage",
+      "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/ArcGIS/rest/services/Priority_Restoration_Reaches_02July2021/FeatureServer/0",
+      "definitionexpression": "",
+      "spatialsearchlayer": false,
+      "export2Csv": false,
+      "export2Geo": false,
+      "export2FC": false,
+      "zoomScale": 10000,
+      "forceZoomScale": false,
+      "shareResult": false,
+      "addToAttrib": false,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Search by Steelhead and Priority Life Stage",
+            "textsearchlabel": "",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Priority_Species",
+                    "label": "Priority Species",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {
+                    "value": "Steelhead"
+                  },
+                  "prompt": "",
+                  "textsearchhint": "",
+                  "sqltext": "Upper(Priority_Species) LIKE Upper('%Steelhead%')",
+                  "operation": "stringOperatorContains"
+                },
+                {
+                  "fieldObj": {
+                    "name": "Priority_Life_Stages",
+                    "label": "Priority Life Stages",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Priority Life Stages contains",
+                  "textsearchhint": "Fry",
+                  "sqltext": "Priority_Life_Stages LIKE '%[value]%'",
+                  "operation": "stringOperatorContains",
+                  "operator": "OR",
+                  "userlist": "Adult Migration|Adult Migration,Fry|Fry,Holding and Maturation|Holding and Maturation,Smolt Outmigration|Smolt Outmigration,Spawning and Incubation|Spawning and Incubation,Summer Rearing|Summer Rearing,Winter Rearing|Winter Rearing"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "ReachName",
+            "alias": "ReachName"
+          },
+          {
+            "name": "Basin",
+            "alias": "Basin"
+          },
+          {
+            "name": "Assessment",
+            "alias": "Assessment"
+          },
+          {
+            "name": "RM_Start",
+            "alias": "RM_Start"
+          },
+          {
+            "name": "RM_End",
+            "alias": "RM_End",
+            "isnumber": true
+          },
+          {
+            "name": "SpringChin",
+            "alias": "SpringChin"
+          },
+          {
+            "name": "SteelheadR",
+            "alias": "SteelheadR"
+          },
+          {
+            "name": "BullTroutR",
+            "alias": "BullTroutR"
+          },
+          {
+            "name": "Length_mi",
+            "alias": "Length_mi",
+            "isnumber": true
+          },
+          {
+            "name": "Length_m",
+            "alias": "Length_m",
+            "isnumber": true
+          },
+          {
+            "name": "Reach_Name",
+            "alias": "Reach Name"
+          },
+          {
+            "name": "Basin_1",
+            "alias": "Basin"
+          },
+          {
+            "name": "Assessment_Unit",
+            "alias": "Assessment Unit"
+          },
+          {
+            "name": "Priority_Actions",
+            "alias": "Priority Actions"
+          },
+          {
+            "name": "Reach_Rank",
+            "alias": "Reach Rank"
+          },
+          {
+            "name": "Priority_Species",
+            "alias": "Priority Species"
+          },
+          {
+            "name": "Priority_Life_Stages",
+            "alias": "Priority Life Stages"
+          },
+          {
+            "name": "Unacceptable_Limiting_Factors",
+            "alias": "Unacceptable Limiting Factors"
+          },
+          {
+            "name": "At_Risk_Limiting_Factors",
+            "alias": "At-Risk Limiting Factors"
+          },
+          {
+            "name": "Action_Categories",
+            "alias": "Action Categories"
+          },
+          {
+            "name": "ObjectID",
+            "alias": "ObjectID",
+            "isnumber": true
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "isnumber": true
+          }
+        ]
+      },
+      "links": {
+        "link": []
+      },
+      "relates": {
+        "relate": []
+      },
+      "orderByFields": [],
+      "showattachments": false,
+      "autozoomtoresults": false,
+      "layersymbolfrom": "server"
+    }
+  ],
+  "disabledtabs": [
+    "graphic",
+    "spatial"
+  ],
+  "bufferDefaults": {
+    "autoZoom": true,
+    "addtolegend": false,
+    "bufferUnits": {
+      "bufferUnit": [
+        {
+          "name": "UNIT_FOOT",
+          "label": "Feet"
+        },
+        {
+          "name": "UNIT_STATUTE_MILE",
+          "label": "Miles"
+        },
+        {
+          "name": "UNIT_METER",
+          "label": "Meter"
+        }
+      ]
+    },
+    "bufferDefaultValue": 5,
+    "bufferWKID": 102003,
+    "simplefillsymbol": {
+      "color": [
+        1,
+        185,
+        253,
+        128
+      ],
+      "outline": {
+        "color": [
+          1,
+          185,
+          253,
+          204
+        ],
+        "width": 1,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "spatialrelationships": {
+    "spatialrelationship": [
+      {
+        "name": "esriSpatialRelContains",
+        "label": "entirely contained in"
+      },
+      {
+        "name": "esriSpatialRelIntersects",
+        "label": "intersected by"
+      },
+      {
+        "name": "esriSpatialRelEnvelopeIntersects",
+        "label": "intersected by envelope of"
+      }
+    ]
+  },
+  "graphicalsearchoptions": {
+    "enablepointselect": true,
+    "enablelineselect": true,
+    "enablepolylineselect": true,
+    "enableextentselect": true,
+    "enablecircleselect": true,
+    "enablepolyselect": true,
+    "showmultigraphicsgraphicaloption": true,
+    "showaddtolerancegraphicaloption": true,
+    "showaddsqltextgraphicaloption": true,
+    "showbuffergraphicaloption": true,
+    "buffercheckedbydefaultgraphicaloption": false,
+    "multipartgraphicsearchchecked": false,
+    "addpointtolerancechecked": false,
+    "toleranceforpointgraphicalselection": 6,
+    "keepgraphicalsearchenabled": true
+  },
+  "symbols": {
+    "simplemarkersymbol": null,
+    "picturemarkersymbol": {
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriPMS",
+      "url": "https://localhost:3346/webappbuilder/apps/8/widgets/eSearch/https://localhost:3346/webappbuilder/apps/8/widgets/eSearch/https://localhost:3346/webappbuilder/apps/8/widgets/eSearch/https://localhost:3346/webappbuilder/apps/2/widgets/eSearch/https://localhost:3346/webappbuilder/apps/2/widgets/eSearch/images/i_search.png",
+      "width": 20.00025,
+      "height": 20.00025
+    },
+    "simplelinesymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        0
+      ],
+      "width": 2.25,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "simplefillsymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          204
+        ],
+        "width": 0,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "resultFormat": {
+    "attTitlesymbol": {
+      "bold": true,
+      "italic": true,
+      "underline": false,
+      "color": [
+        111,
+        154,
+        175,
+        1
+      ]
+    },
+    "attValuesymbol": {
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    "wrap": true
+  },
+  "initialView": "text",
+  "selectfilter": "contains",
+  "enablePopupsOnResultClick": true,
+  "disablePopups": false,
+  "disableuvcache": false,
+  "exportsearchurlchecked": false,
+  "limitsearch2mapextentchecked": false,
+  "autozoomtoresults": true,
+  "mouseovergraphics": true,
+  "mouseoverlist": false,
+  "datedisplayformat": "d MMM yyyy",
+  "zoomFactor": 1,
+  "containsword": false
+}
