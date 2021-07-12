@@ -88,6 +88,7 @@ define([
               this.operLayerInfos = operLayerInfos;
               this.showLayers();
               this.bindEvents();
+              //console.log("first test");
               dom.setSelectable(this.layerListBody1, false);
               dom.setSelectable(this.layerListTitle1, false);
             }));
@@ -171,7 +172,7 @@ define([
           layerListWidget: this,
           layerFilter: this.layerFilter,
           config: this.config,
-          layerIds: 'Reaches_Breakpoints_4852,Reaches_With_Actions_9286,priority_reaches_02222021_174'
+          layerIds: 'Upper_Columbia_Prioritization_Web_Application_Data_Testing_3646,Priority_Protection_Reaches_2July2021_1216,Upper_Columbia_Prioritization_Web_Application_Data_Testing_6645,Priority_Restoration_Reaches_02July2021_7753,Reaches_Breakpoints_4852,Upper_Columbia_Prioritization_Web_Application_Data_Testing_6906'
         }).placeAt(this.layerListBody2);
 
         this.layerListView3 = new LayerListView({

@@ -97,6 +97,8 @@ Query, esriRequest) {
       this._initServiceDefinitionBuffer();
 
       this._bindEvent();
+      //Turn on this console log to get values for Layer
+      //console.log(this._layerInfos);
     },
 
     _initOldFilter: function() {
