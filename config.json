@@ -1309,6 +1309,275 @@
           },
           "typeIdField": ""
         }
+      },
+      "widget~_26~3": {
+        "id": "widget~_26~3",
+        "type": "Features",
+        "label": "Filter by Priority Species",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolyline",
+          "fields": [
+            {
+              "name": "OBJECTID_1",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID_1",
+              "sqlType": "sqlTypeOther",
+              "nullable": false,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "ReachName",
+              "type": "esriFieldTypeString",
+              "alias": "ReachName",
+              "sqlType": "sqlTypeOther",
+              "length": 80,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Basin",
+              "type": "esriFieldTypeString",
+              "alias": "Basin",
+              "sqlType": "sqlTypeOther",
+              "length": 80,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Assessment",
+              "type": "esriFieldTypeString",
+              "alias": "Assessment",
+              "sqlType": "sqlTypeOther",
+              "length": 80,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "RM_Start",
+              "type": "esriFieldTypeString",
+              "alias": "RM_Start",
+              "sqlType": "sqlTypeOther",
+              "length": 80,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "RM_End",
+              "type": "esriFieldTypeDouble",
+              "alias": "RM_End",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "SpringChin",
+              "type": "esriFieldTypeString",
+              "alias": "SpringChin",
+              "sqlType": "sqlTypeOther",
+              "length": 80,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "SteelheadR",
+              "type": "esriFieldTypeString",
+              "alias": "SteelheadR",
+              "sqlType": "sqlTypeOther",
+              "length": 80,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "BullTroutR",
+              "type": "esriFieldTypeString",
+              "alias": "BullTroutR",
+              "sqlType": "sqlTypeOther",
+              "length": 80,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Length_mi",
+              "type": "esriFieldTypeDouble",
+              "alias": "Length_mi",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Length_m",
+              "type": "esriFieldTypeDouble",
+              "alias": "Length_m",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Reach_Name",
+              "type": "esriFieldTypeString",
+              "alias": "Reach Name",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Basin_1",
+              "type": "esriFieldTypeString",
+              "alias": "Basin",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Assessment_Unit",
+              "type": "esriFieldTypeString",
+              "alias": "Assessment Unit",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Priority_Actions",
+              "type": "esriFieldTypeString",
+              "alias": "Priority Actions",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Reach_Rank",
+              "type": "esriFieldTypeString",
+              "alias": "Reach Rank",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Priority_Species",
+              "type": "esriFieldTypeString",
+              "alias": "Priority Species",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Priority_Life_Stages",
+              "type": "esriFieldTypeString",
+              "alias": "Priority Life Stages",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Unacceptable_Limiting_Factors",
+              "type": "esriFieldTypeString",
+              "alias": "Unacceptable Limiting Factors",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "At_Risk_Limiting_Factors",
+              "type": "esriFieldTypeString",
+              "alias": "At-Risk Limiting Factors",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Action_Categories",
+              "type": "esriFieldTypeString",
+              "alias": "Action Categories",
+              "sqlType": "sqlTypeOther",
+              "length": 255,
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "ObjectID",
+              "type": "esriFieldTypeInteger",
+              "alias": "ObjectID",
+              "sqlType": "sqlTypeOther",
+              "nullable": true,
+              "editable": true,
+              "domain": null,
+              "defaultValue": null
+            },
+            {
+              "name": "Shape__Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape__Length",
+              "sqlType": "sqlTypeDouble",
+              "nullable": true,
+              "editable": false,
+              "domain": null,
+              "defaultValue": null
+            }
+          ],
+          "displayField": "ReachName",
+          "objectIdField": {
+            "name": "OBJECTID_1",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID_1",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+          },
+          "typeIdField": ""
+        }
       }
     },
     "settings": {}

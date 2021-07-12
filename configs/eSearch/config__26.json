@@ -490,6 +490,128 @@
       "showattachments": false,
       "autozoomtoresults": false,
       "layersymbolfrom": "server"
+    },
+    {
+      "name": "Filter by Priority Species",
+      "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/ArcGIS/rest/services/Priority_Restoration_Reaches_02July2021/FeatureServer/0",
+      "definitionexpression": "",
+      "spatialsearchlayer": false,
+      "export2Csv": false,
+      "export2Geo": false,
+      "export2FC": false,
+      "zoomScale": 10000,
+      "forceZoomScale": false,
+      "shareResult": false,
+      "addToAttrib": false,
+      "expressions": {
+        "expression": [
+          {
+            "alias": "Filter by Priority Restoration Reach Name",
+            "textsearchlabel": "Filter by Priority Restoration Reach Name",
+            "values": {
+              "value": [
+                {
+                  "fieldObj": {
+                    "name": "Priority_Species",
+                    "label": "Priority Species",
+                    "shortType": "string",
+                    "type": "esriFieldTypeString"
+                  },
+                  "valueObj": {},
+                  "prompt": "Priority Species is",
+                  "textsearchhint": "\"Spring Chinook\"",
+                  "sqltext": "Priority_Species = '[value]'",
+                  "operation": "stringOperatorIs",
+                  "userlist": "Spring Chinook|Spring Chinook,Steelhead|Steelhead,Bull Trout|Bull Trout"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "titlefield": null,
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "ReachName",
+            "alias": "ReachName"
+          },
+          {
+            "name": "Basin",
+            "alias": "Basin"
+          },
+          {
+            "name": "Assessment",
+            "alias": "Assessment"
+          },
+          {
+            "name": "RM_Start",
+            "alias": "RM_Start"
+          },
+          {
+            "name": "RM_End",
+            "alias": "RM_End",
+            "isnumber": true
+          },
+          {
+            "name": "SpringChin",
+            "alias": "SpringChin"
+          },
+          {
+            "name": "SteelheadR",
+            "alias": "SteelheadR"
+          },
+          {
+            "name": "BullTroutR",
+            "alias": "BullTroutR"
+          },
+          {
+            "name": "Length_mi",
+            "alias": "Length_mi",
+            "isnumber": true
+          },
+          {
+            "name": "Length_m",
+            "alias": "Length_m",
+            "isnumber": true
+          },
+          {
+            "name": "Reach_Name",
+            "alias": "Reach Name"
+          },
+          {
+            "name": "Basin_1",
+            "alias": "Basin"
+          },
+          {
+            "name": "Priority_Species",
+            "alias": "Priority Species"
+          },
+          {
+            "name": "Assessment_Unit",
+            "alias": "Assessment Unit"
+          },
+          {
+            "name": "Priority_Actions",
+            "alias": "Priority Actions"
+          },
+          {
+            "name": "Reach_Rank",
+            "alias": "Reach Rank"
+          }
+        ]
+      },
+      "links": {
+        "link": []
+      },
+      "relates": {
+        "relate": []
+      },
+      "orderByFields": [],
+      "showattachments": false,
+      "autozoomtoresults": false,
+      "layersymbolfrom": "server"
     }
   ],
   "disabledtabs": [
