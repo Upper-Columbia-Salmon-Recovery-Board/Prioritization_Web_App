@@ -171,8 +171,8 @@
       "export2FC": false,
       "zoomScale": 10000,
       "forceZoomScale": false,
-      "shareResult": true,
-      "addToAttrib": true,
+      "shareResult": false,
+      "addToAttrib": false,
       "expressions": {
         "expression": [
           {
@@ -337,8 +337,8 @@
       "export2FC": false,
       "zoomScale": 10000,
       "forceZoomScale": false,
-      "shareResult": true,
-      "addToAttrib": true,
+      "shareResult": false,
+      "addToAttrib": false,
       "expressions": {
         "expression": [
           {
@@ -501,13 +501,13 @@
       "export2FC": false,
       "zoomScale": 10000,
       "forceZoomScale": false,
-      "shareResult": true,
-      "addToAttrib": true,
+      "shareResult": false,
+      "addToAttrib": false,
       "expressions": {
         "expression": [
           {
-            "alias": "Priority Species",
-            "textsearchlabel": "Spring Chinook",
+            "alias": "Filter by Priority Restoration Reach Name",
+            "textsearchlabel": "Filter by Priority Restoration Reach Name",
             "values": {
               "value": [
                 {
@@ -518,10 +518,10 @@
                     "type": "esriFieldTypeString"
                   },
                   "valueObj": {},
-                  "prompt": "Priority Species contains",
-                  "textsearchhint": "Spring Chinook",
-                  "sqltext": "Priority_Species LIKE '%[value]%'",
-                  "operation": "stringOperatorContains",
+                  "prompt": "Priority Species is",
+                  "textsearchhint": "\"Spring Chinook\"",
+                  "sqltext": "Priority_Species = '[value]'",
+                  "operation": "stringOperatorIs",
                   "userlist": "Spring Chinook|Spring Chinook,Steelhead|Steelhead,Bull Trout|Bull Trout"
                 }
               ]
@@ -585,6 +585,10 @@
             "alias": "Basin"
           },
           {
+            "name": "Priority_Species",
+            "alias": "Priority Species"
+          },
+          {
             "name": "Assessment_Unit",
             "alias": "Assessment Unit"
           },
@@ -595,36 +599,6 @@
           {
             "name": "Reach_Rank",
             "alias": "Reach Rank"
-          },
-          {
-            "name": "Priority_Species",
-            "alias": "Priority Species"
-          },
-          {
-            "name": "Priority_Life_Stages",
-            "alias": "Priority Life Stages"
-          },
-          {
-            "name": "Unacceptable_Limiting_Factors",
-            "alias": "Unacceptable Limiting Factors"
-          },
-          {
-            "name": "At_Risk_Limiting_Factors",
-            "alias": "At-Risk Limiting Factors"
-          },
-          {
-            "name": "Action_Categories",
-            "alias": "Action Categories"
-          },
-          {
-            "name": "ObjectID",
-            "alias": "ObjectID",
-            "isnumber": true
-          },
-          {
-            "name": "Shape__Length",
-            "alias": "Shape__Length",
-            "isnumber": true
           }
         ]
       },

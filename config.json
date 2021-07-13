@@ -43,7 +43,8 @@
         },
         "version": "2.18",
         "id": "themes_FoldableTheme_widgets_HeaderController_Widget_20",
-        "name": "HeaderController"
+        "name": "HeaderController",
+        "icon": "/webappbuilder/apps/5/themes/FoldableTheme/widgets/HeaderController/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/Scalebar/Widget",
@@ -54,7 +55,8 @@
         },
         "version": "2.18",
         "id": "widgets_Scalebar_Widget_21",
-        "name": "Scalebar"
+        "name": "Scalebar",
+        "icon": "/webappbuilder/apps/5/widgets/Scalebar/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/Search/Widget",
@@ -68,7 +70,8 @@
         "name": "Search",
         "config": "configs/Search/config_widgets_Search_Widget_22.json",
         "label": "Find a Place",
-        "visible": false
+        "visible": false,
+        "icon": "/webappbuilder/apps/5/widgets/Search/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/Coordinate/Widget",
@@ -79,7 +82,8 @@
         },
         "version": "2.18",
         "id": "widgets_Coordinate_Widget_23",
-        "name": "Coordinate"
+        "name": "Coordinate",
+        "icon": "/webappbuilder/apps/5/widgets/Coordinate/images/icon.png?wab_dv=2.20"
       },
       {
         "position": {
@@ -93,7 +97,8 @@
         "closeable": true,
         "uri": "widgets/GroupFilter/Widget",
         "name": "GroupFilter",
-        "label": "Filter by Life Stage"
+        "label": "Filter by Life Stage",
+        "icon": "/webappbuilder/apps/5/widgets/GroupFilter/images/icon.png?wab_dv=2.20"
       },
       {
         "position": {
@@ -121,7 +126,8 @@
         "uri": "widgets/eSearch/Widget",
         "config": "configs/eSearch/config__26.json",
         "label": "Filter Priority Reaches ",
-        "openAtStart": true
+        "openAtStart": true,
+        "icon": "/webappbuilder/apps/5/widgets/eSearch/images/icon.png?wab_dv=2.20"
       },
       {
         "position": {
@@ -156,7 +162,8 @@
         "id": "widgets_OverviewMap_Widget_29",
         "name": "OverviewMap",
         "config": "configs/OverviewMap/config_widgets_OverviewMap_Widget_29.json",
-        "visible": false
+        "visible": false,
+        "icon": "/webappbuilder/apps/5/widgets/OverviewMap/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/HomeButton/Widget",
@@ -167,7 +174,8 @@
         },
         "version": "2.18",
         "id": "widgets_HomeButton_Widget_30",
-        "name": "HomeButton"
+        "name": "HomeButton",
+        "icon": "/webappbuilder/apps/5/widgets/HomeButton/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/MyLocation/Widget",
@@ -180,7 +188,8 @@
         "id": "widgets_MyLocation_Widget_31",
         "name": "MyLocation",
         "config": "configs/MyLocation/config_widgets_MyLocation_Widget_31.json",
-        "visible": false
+        "visible": false,
+        "icon": "/webappbuilder/apps/5/widgets/MyLocation/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/AttributeTable/Widget",
@@ -190,7 +199,7 @@
         },
         "id": "widgets_AttributeTable_Widget_32",
         "name": "AttributeTable",
-        "config": "configs/AttributeTable/config_widgets_AttributeTable_Widget_32.json"
+        "icon": "/webappbuilder/apps/5/widgets/AttributeTable/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/Splash/Widget",
@@ -200,7 +209,8 @@
         "version": "2.18",
         "id": "widgets_Splash_Widget_33",
         "name": "Splash",
-        "config": "configs/Splash/config_widgets_Splash_Widget_33.json"
+        "config": "configs/Splash/config_widgets_Splash_Widget_33.json",
+        "icon": "/webappbuilder/apps/5/widgets/Splash/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/ZoomSlider/Widget",
@@ -211,7 +221,8 @@
         },
         "version": "2.18",
         "id": "widgets_ZoomSlider_Widget_34",
-        "name": "ZoomSlider"
+        "name": "ZoomSlider",
+        "icon": "/webappbuilder/apps/5/widgets/ZoomSlider/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/ExtentNavigate/Widget",
@@ -223,7 +234,8 @@
         },
         "version": "2.18",
         "id": "widgets_ExtentNavigate_Widget_35",
-        "name": "ExtentNavigate"
+        "name": "ExtentNavigate",
+        "icon": "/webappbuilder/apps/5/widgets/ExtentNavigate/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/FullScreen/Widget",
@@ -235,7 +247,8 @@
         },
         "version": "2.18",
         "id": "widgets_FullScreen_Widget_36",
-        "name": "FullScreen"
+        "name": "FullScreen",
+        "icon": "/webappbuilder/apps/5/widgets/FullScreen/images/icon.png?wab_dv=2.20"
       }
     ],
     "panel": {
@@ -279,7 +292,8 @@
         "version": "2.18",
         "id": "widgets_Legend_Widget_18",
         "name": "Legend",
-        "index": 2
+        "index": 2,
+        "icon": "/webappbuilder/apps/5/widgets/Legend/images/icon.png?wab_dv=2.20"
       },
       {
         "uri": "widgets/LayerList/Widget",
@@ -287,7 +301,8 @@
         "id": "widgets_LayerList_Widget_19",
         "name": "LayerList",
         "index": 3,
-        "openAtStart": true
+        "openAtStart": true,
+        "icon": "/webappbuilder/apps/5/widgets/LayerList/images/icon.png?wab_dv=2.20"
       },
       {
         "name": "About",
@@ -295,7 +310,8 @@
         "uri": "widgets/About/Widget",
         "config": "configs/About/config_widgets_About_Widget_37.json",
         "index": 5,
-        "id": "widgets_About_Widget_37"
+        "id": "widgets_About_Widget_37",
+        "icon": "/webappbuilder/apps/5/widgets/About/images/icon.png?wab_dv=2.20"
       }
     ],
     "groups": []
@@ -476,7 +492,7 @@
       "height": 29
     }
   },
-  "wabVersion": "2.18",
+  "wabVersion": "2.20",
   "isTemplateApp": true,
   "isWebTier": false,
   "httpProxy": {

@@ -207,6 +207,7 @@ define([
       ckSelect = new CheckBox({
         checked: layerInfo.isVisible(), //layerInfo.visible
         'class': "visible-checkbox-" + layerInfo.id
+         
       });
 
       domConstruct.place(ckSelect.domNode, ckSelectDiv);
@@ -260,6 +261,7 @@ define([
 
       var grayedTitleClass = '';
       try {
+        console.log("we are here");
         if (!layerInfo.isInScale()) {
           grayedTitleClass = 'grayed-title';
         }
