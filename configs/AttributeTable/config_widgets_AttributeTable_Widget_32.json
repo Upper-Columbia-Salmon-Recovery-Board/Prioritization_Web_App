@@ -1,19 +1,23 @@
 {
   "layerInfos": [
     {
-      "name": "Barrier Prioritization",
-      "id": "Barriers_Prioritization_588",
+      "name": "All Reaches Basin Information",
+      "id": "Reaches_June2021_4768",
       "layer": {
-        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Barriers_Prioritization/FeatureServer/0",
+        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Reaches_June2021/FeatureServer/0",
         "fields": [
           {
-            "name": "BarrierName",
-            "alias": "Barrier Name or ID",
-            "show": true
+            "name": "FID",
+            "alias": "FID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
           },
           {
-            "name": "BarrierType",
-            "alias": "Barrier Type",
+            "name": "ReachName",
+            "alias": "ReachName",
             "show": true
           },
           {
@@ -22,214 +26,18 @@
             "show": true
           },
           {
-            "name": "BarrierPassibility",
-            "alias": "Barrier Passibility (%)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Spawning_SH",
-            "alias": "Spawning Area - Steelhead",
+            "name": "Assessment",
+            "alias": "Assessment",
             "show": true
           },
           {
-            "name": "Spawning_SPCH",
-            "alias": "Spawning Area - Spring Chinook",
+            "name": "RM_Start",
+            "alias": "RM_Start",
             "show": true
           },
           {
-            "name": "Spawning_BT",
-            "alias": "Spawning Area - Bull Trout",
-            "show": true
-          },
-          {
-            "name": "ColonizationDistance_SPCH_m",
-            "alias": "Colonization Potential SPCH (Distance to Colonizers, m)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "ColonizationDistance_SH_m",
-            "alias": "Colonization Potential SH (Distance to Colonizers, m)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "ColonizationDistance_BT_m",
-            "alias": "Colonization Potential BT (Distance to Colonizers, m)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "SpeciesBenefit",
-            "alias": "Number of Species Benefitting",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "AreaofUpstreamIP_SPCH",
-            "alias": "Area of Upstream IP - Spring Chinook",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "AreaofUpstreamIP_SH",
-            "alias": "Area of Upstream IP - Steelhead",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "AreaofUpstreamIP_BT",
-            "alias": "Area of Upstream IP - Bull Trout",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "WQ_303dlisting",
-            "alias": "Water Quality - 303d listing",
-            "show": true
-          },
-          {
-            "name": "StreamTemp",
-            "alias": "Average Stream Temperature (deg C)",
-            "show": true,
-            "format": {
-              "places": 1,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "RoadDensity",
-            "alias": "Road Density (mi/mi)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "CanopyCover",
-            "alias": "Canopy Cover (%)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "UpstreamBarrierCount",
-            "alias": "Number of Barriers Upstream",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "UpstreamBarrierPassibility",
-            "alias": "Minimum Upstream Barrier Passibility (%)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "UpstreamFlow",
-            "alias": "Upstream Flow",
-            "show": true
-          },
-          {
-            "name": "DownstreamBarriersCount",
-            "alias": "Number of Barriers Downstream",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "DownstreamBarrierPassibility",
-            "alias": "Minimum Downstream Barrier Passibility (%)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "AvgTemp2040",
-            "alias": "Future Average Stream Temperature (deg C)",
-            "show": true,
-            "format": {
-              "places": 2,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "FloodEvents",
-            "alias": "Flood Events (percent change)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "HydrologicRegimeShift_days",
-            "alias": "Hydrologic Regime Shift (CFM, days)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "SummerLowFlow_MS",
-            "alias": "Summer Low Flow (MS, percent change)",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "BarrierFlag",
-            "alias": "Flagged Barrier (special considerations)",
-            "show": true
-          },
-          {
-            "name": "Tier",
-            "alias": "Tier",
-            "show": true
-          },
-          {
-            "name": "Total_Prioritization",
-            "alias": "Total Prioritization",
+            "name": "RM_End",
+            "alias": "RM_End",
             "show": true,
             "format": {
               "places": 6,
@@ -237,8 +45,23 @@
             }
           },
           {
-            "name": "SPCH_Prioritization",
-            "alias": "SPCH Prioritization",
+            "name": "SpringChin",
+            "alias": "SpringChin",
+            "show": true
+          },
+          {
+            "name": "SteelheadR",
+            "alias": "SteelheadR",
+            "show": true
+          },
+          {
+            "name": "BullTroutR",
+            "alias": "BullTroutR",
+            "show": true
+          },
+          {
+            "name": "Length_mi",
+            "alias": "Length_mi",
             "show": true,
             "format": {
               "places": 6,
@@ -246,8 +69,8 @@
             }
           },
           {
-            "name": "SH_Prioritization",
-            "alias": "SH Prioritization",
+            "name": "Length_m",
+            "alias": "Length_m",
             "show": true,
             "format": {
               "places": 6,
@@ -255,428 +78,148 @@
             }
           },
           {
-            "name": "BT_Prioritization",
-            "alias": "BT Prioritization",
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
             "show": true,
             "format": {
               "places": 6,
               "digitSeparator": false
             }
-          },
-          {
-            "name": "Barrier_Passability_Score",
-            "alias": "Barrier Passability Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Spawning_Area___Spring_Chinook_",
-            "alias": "Spawning Area - Spring Chinook Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Spawning_Area___Steelhead_Score",
-            "alias": "Spawning Area - Steelhead Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Spawning_Area___Bull_Trout_Scor",
-            "alias": "Spawning Area - Bull Trout Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Colonization_Potential_SPCH_Sco",
-            "alias": "Colonization Potential SPCH Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Colonization_Potential_SH_Score",
-            "alias": "Colonization Potential SH Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Colonization_Potential_BT_Score",
-            "alias": "Colonization Potential BT Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Number_of_Species_Benefitting_S",
-            "alias": "Number of Species Benefitting Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Habitat_Quantity___Spring_Chino",
-            "alias": "Habitat Quantity - Spring Chinook Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Habitat_Quantity___Steelhead_Sc",
-            "alias": "Habitat Quantity - Steelhead Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Habitat_Quantity___Bull_Trout_S",
-            "alias": "Habitat Quantity - Bull Trout Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Water_Quality_SPCH_Score",
-            "alias": "Water Quality SPCH Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Water_Quality_SH_Score",
-            "alias": "Water Quality SH Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Water_Quality_BT_Score",
-            "alias": "Water Quality BT Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Road_Density__Score",
-            "alias": "Road Density  Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Canopy_Cover_Score",
-            "alias": "Canopy Cover Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Connectivity_Score",
-            "alias": "Connectivity Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Habitat_Quality_Geomean_SPCH_Sc",
-            "alias": "Habitat Quality Geomean SPCH Score",
-            "show": true,
-            "format": {
-              "places": 2,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Habitat_Quality_Geomean_SH_Scor",
-            "alias": "Habitat Quality Geomean SH Score",
-            "show": true,
-            "format": {
-              "places": 2,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Habitat_Quality_Geomean_BT_Scor",
-            "alias": "Habitat Quality Geomean BT Score",
-            "show": true,
-            "format": {
-              "places": 6,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Future_Average_Stream_Temperatu",
-            "alias": "Future Average Stream Temperature (deg C)_SPCH Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Future_Average_Stream_Tempera_1",
-            "alias": "Future Average Stream Temperature (deg C)_SH Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Future_Average_Stream_Tempera_2",
-            "alias": "Future Average Stream Temperature (deg C)_BT Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Flood_Events__percent_change__S",
-            "alias": "Flood Events (percent change) Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Hydrologic_Regime_Shift__CFM__d",
-            "alias": "Hydrologic Regime Shift (CFM, days) Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Summer_Low_Flow__MS__percent_ch",
-            "alias": "Summer Low Flow (MS, percent change) Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Climate_Change_Geomean_SPCH_Sco",
-            "alias": "Climate Change Geomean_SPCH Score",
-            "show": true,
-            "format": {
-              "places": 2,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Climate_Change_Geomean_SH_Score",
-            "alias": "Climate Change Geomean_SH Score",
-            "show": true,
-            "format": {
-              "places": 2,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Climate_Change_Geomean_BT_Score",
-            "alias": "Climate Change Geomean_BT Score",
-            "show": true,
-            "format": {
-              "places": 2,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "Downstream_Barriers_Score",
-            "alias": "Downstream Barriers Score",
-            "show": true,
-            "format": {
-              "places": 0,
-              "digitSeparator": false
-            }
-          },
-          {
-            "name": "OBJECTID",
-            "alias": "OBJECTID",
-            "show": false
-          },
-          {
-            "name": "StreamName",
-            "alias": "Stream Name",
-            "show": false
-          },
-          {
-            "name": "TribToName",
-            "alias": "Tributary To Name",
-            "show": false
-          },
-          {
-            "name": "RoadName",
-            "alias": "Road Name",
-            "show": false
-          },
-          {
-            "name": "Enabled",
-            "alias": "Enabled",
-            "show": false
-          },
-          {
-            "name": "RemovePrioritization",
-            "alias": "RemovePrioritization",
-            "show": false
           }
         ]
       },
-      "show": false,
+      "show": true,
       "showAttachments": false,
-      "sortField": "BarrierName",
+      "sortField": "FID",
       "isDescending": false
     },
     {
       "name": "Reach Break River Mile",
       "id": "Reaches_Breakpoints_4852",
       "layer": {
-        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Reaches_Breakpoints/FeatureServer/0",
-        "fields": [
-          {
-            "name": "OBJECTID",
-            "alias": "OBJECTID",
-            "show": true
-          },
-          {
-            "name": "RiverMile",
-            "alias": "RiverMile",
-            "show": true,
-            "format": {
-              "places": 2,
-              "digitSeparator": true
-            }
-          }
-        ]
+        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Reaches_Breakpoints/FeatureServer/0"
       },
-      "show": false,
+      "show": true,
       "showAttachments": false,
       "sortField": "OBJECTID",
       "isDescending": false
     },
     {
-      "name": "Priority Reaches",
-      "id": "priority_reaches_02222021_174",
+      "name": "Habitat Quality",
+      "id": "Habitat_Quality_Scores_for_WebMap_5785",
       "layer": {
-        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/priority_reaches_02222021/FeatureServer/0",
+        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Habitat_Quality_Scores_for_WebMap/FeatureServer/0",
         "fields": [
           {
-            "show": false,
-            "name": "OBJECTID",
-            "alias": "OBJECTID"
-          },
-          {
-            "show": true,
             "name": "ReachName",
-            "alias": "Reach Name"
+            "alias": "ReachName",
+            "show": true
           },
           {
-            "show": true,
-            "name": "Basin",
-            "alias": "Basin"
-          },
-          {
-            "show": true,
             "name": "Assessment_Unit",
-            "alias": "Assessment Unit"
+            "alias": "Assessment_Unit",
+            "show": true
           },
           {
+            "name": "Basin",
+            "alias": "Basin",
+            "show": true
+          },
+          {
+            "name": "Bank_Stability",
+            "alias": "Bank Stability",
+            "show": true
+          },
+          {
+            "name": "Channel_Stability",
+            "alias": "Channel Stability",
+            "show": true
+          },
+          {
+            "name": "Coarse_Substrate",
+            "alias": "Coarse Substrate",
+            "show": true
+          },
+          {
+            "name": "Cover__Wood",
+            "alias": "Cover- Wood",
+            "show": true
+          },
+          {
+            "name": "Flow__Summer_Base_Flow",
+            "alias": "Flow- Summer Base Flow",
+            "show": true
+          },
+          {
+            "name": "Off_Channel__Floodplain",
+            "alias": "Off-Channel- Floodplain",
+            "show": true
+          },
+          {
+            "name": "Off_Channel__Side_Channels",
+            "alias": "Off-Channel- Side-Channels",
+            "show": true
+          },
+          {
+            "name": "Pool_Quantity___Quality",
+            "alias": "Pool Quantity & Quality",
+            "show": true
+          },
+          {
+            "name": "Riparian__Canopy_Cover",
+            "alias": "Riparian- Canopy Cover",
+            "show": true
+          },
+          {
+            "name": "Riparian_Disturbance",
+            "alias": "Riparian-Disturbance",
+            "show": true
+          },
+          {
+            "name": "Temperature__Rearing",
+            "alias": "Temperature- Rearing",
+            "show": true
+          },
+          {
+            "name": "HQ_Sum",
+            "alias": "HQ_Sum",
             "show": true,
-            "name": "River_Mile___Start",
-            "alias": "River Mile - Start"
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
           },
           {
+            "name": "HQ_Pct",
+            "alias": "HQ_Pct",
             "show": true,
-            "name": "River_Mile___End",
-            "alias": "River Mile - End"
+            "format": {
+              "places": 6,
+              "digitSeparator": false
+            }
           },
           {
-            "show": false,
-            "name": "Species",
-            "alias": "Species"
+            "name": "OBJECTID_1",
+            "alias": "OBJECTID_1",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
           },
           {
-            "show": false,
-            "name": "Limiting_Factor",
-            "alias": "Limiting Factor"
+            "name": "ObjectID",
+            "alias": "ObjectID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
           },
           {
-            "show": false,
-            "name": "Action_Categories",
-            "alias": "Action Categories"
-          },
-          {
-            "show": false,
             "name": "Shape__Length",
-            "alias": "Shape__Length"
-          },
-          {
-            "show": false,
-            "name": "Priority_Life_Stages",
-            "alias": "Priority Life Stages"
-          },
-          {
-            "show": true,
-            "name": "Species_Info",
-            "alias": "Species"
-          },
-          {
-            "show": true,
-            "name": "Limiting_Factor_Info",
-            "alias": "Limiting Factor"
-          },
-          {
-            "show": false,
-            "name": "Action_Categories_Info",
-            "alias": "Action Categories"
-          },
-          {
-            "show": true,
-            "name": "Priority_Life_Stages_Info",
-            "alias": "Priority Life Stages"
+            "alias": "Shape__Length",
+            "show": true
           }
         ]
       },
@@ -686,245 +229,223 @@
       "isDescending": false
     },
     {
-      "name": "All Reaches",
-      "id": "Reaches_With_Actions_9286",
+      "name": "Priority Restoration Reaches",
+      "id": "Priority_Restoration_Reaches_6909",
       "layer": {
-        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Reaches_With_Actions/FeatureServer/0",
+        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Priority_Restoration_Reaches/FeatureServer/0",
         "fields": [
           {
-            "show": false,
-            "name": "OBJECTID",
-            "alias": "OBJECTID"
-          },
-          {
-            "show": true,
             "name": "ReachName",
-            "alias": "Reach Name"
+            "alias": "ReachName",
+            "show": true
           },
           {
-            "show": true,
+            "name": "Assessment_Unit",
+            "alias": "Assessment Unit",
+            "show": true
+          },
+          {
             "name": "Basin",
-            "alias": "Basin"
+            "alias": "Basin",
+            "show": true
           },
           {
+            "name": "Priority_Actions",
+            "alias": "Priority Actions",
+            "show": true
+          },
+          {
+            "name": "Reach_Rank",
+            "alias": "Reach Rank",
             "show": true,
-            "name": "AssessmentUnit",
-            "alias": "Assessment Unit"
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
           },
           {
+            "name": "Priority_Species",
+            "alias": "Priority Species",
+            "show": true
+          },
+          {
+            "name": "Priority_Life_Stages",
+            "alias": "Priority Life Stages",
+            "show": true
+          },
+          {
+            "name": "Unacceptable_Limiting_Factors",
+            "alias": "Unacceptable Limiting Factors",
+            "show": true
+          },
+          {
+            "name": "At_Risk_Limiting_Factors",
+            "alias": "At-Risk Limiting Factors",
+            "show": true
+          },
+          {
+            "name": "Action_Categories",
+            "alias": "Action Categories",
+            "show": true
+          },
+          {
+            "name": "OBJECTID_1",
+            "alias": "OBJECTID_1",
             "show": true,
-            "name": "SpringChinookReach",
-            "alias": "Spring Chinook Reach"
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
           },
           {
+            "name": "ObjectID",
+            "alias": "ObjectID",
             "show": true,
-            "name": "SteelheadReach",
-            "alias": "Steelhead Reach"
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
           },
           {
-            "show": true,
-            "name": "BullTroutReach",
-            "alias": "Bull Trout Reach"
-          },
-          {
-            "show": true,
-            "name": "ReviewComments",
-            "alias": "Review Comments"
-          },
-          {
-            "show": true,
-            "name": "ReachAssessmentData",
-            "alias": "Reach Assessment Data"
-          },
-          {
-            "show": true,
-            "name": "Level2Data",
-            "alias": "Level 2 Survey Data"
-          },
-          {
-            "show": true,
-            "name": "Level2DataPre2000",
-            "alias": "Level 2 Data Prior to 2000"
-          },
-          {
-            "show": true,
-            "name": "Level2Date",
-            "alias": "Level 2 Survey Data Date"
-          },
-          {
-            "show": true,
-            "name": "DataGap",
-            "alias": "Data Gap"
-          },
-          {
-            "show": true,
-            "name": "Length_mi",
-            "alias": "Length (miles)"
-          },
-          {
-            "show": true,
-            "name": "Length_m",
-            "alias": "Length (meters)"
-          },
-          {
-            "show": true,
-            "name": "RM_Start",
-            "alias": "RM_Start"
-          },
-          {
-            "show": true,
-            "name": "RM_End",
-            "alias": "RM_End"
-          },
-          {
-            "show": true,
-            "name": "Coarse_Substrate",
-            "alias": "Coarse Substrate"
-          },
-          {
-            "show": true,
-            "name": "Percent_Fines__and_Embeddedness",
-            "alias": "Percent Fines and Embeddedness"
-          },
-          {
-            "show": true,
-            "name": "Cover_Wood",
-            "alias": "Cover-Wood"
-          },
-          {
-            "show": true,
-            "name": "Pool_Quantity_And_Quality",
-            "alias": "Pool Quantity and Quality"
-          },
-          {
-            "show": true,
-            "name": "Off_Channel_Floodplain",
-            "alias": "Off Channel Floodplain"
-          },
-          {
-            "show": true,
-            "name": "Off_Channel__Side_Channels",
-            "alias": "Off Channel Side Channels"
-          },
-          {
-            "show": true,
-            "name": "Cover_Undercut_Banks",
-            "alias": "Cover-Undercut Banks"
-          },
-          {
-            "show": true,
-            "name": "Channel_Stability_score",
-            "alias": "Channel Stability score"
-          },
-          {
-            "show": true,
-            "name": "Stability_Mean",
-            "alias": "Stability Mean"
-          },
-          {
-            "show": true,
-            "name": "Riparian_Disturbance_score",
-            "alias": "Riparian-Disturbance Score"
-          },
-          {
-            "show": true,
-            "name": "Riparian_Canopy_Cover_score",
-            "alias": "Riparian-Canopy Cover Score"
-          },
-          {
-            "show": true,
-            "name": "Riparian_Mean",
-            "alias": "Riparian Mean"
-          },
-          {
-            "show": true,
-            "name": "Contaminants",
-            "alias": "Contaminants"
-          },
-          {
-            "show": true,
-            "name": "Entrainment_Stranding",
-            "alias": "Entrainment Stranding"
-          },
-          {
-            "show": true,
-            "name": "Predators__Juveniles",
-            "alias": "Predators Juveniles"
-          },
-          {
-            "show": true,
-            "name": "Cover_Boulders",
-            "alias": "Cover Boulders"
-          },
-          {
-            "show": true,
-            "name": "Flow_Scour",
-            "alias": "Flow Scour"
-          },
-          {
-            "show": true,
-            "name": "Flow_Summer_Base_Flow",
-            "alias": "Flow Summer Base Flow"
-          },
-          {
-            "show": true,
-            "name": "Food_Food_Web_Resources",
-            "alias": "Food Food Web Resources"
-          },
-          {
-            "show": true,
-            "name": "Harassment",
-            "alias": "Harassment"
-          },
-          {
-            "show": true,
-            "name": "Icing",
-            "alias": "Icing"
-          },
-          {
-            "show": true,
-            "name": "Superimposition",
-            "alias": "Superimposition"
-          },
-          {
-            "show": true,
-            "name": "Temperature_Adult_Holding",
-            "alias": "Temperature Adult Holding"
-          },
-          {
-            "show": true,
-            "name": "Temperature_Adult_Spawning",
-            "alias": "Temperature Adult Spawning"
-          },
-          {
-            "show": true,
-            "name": "Temperature__Rearing",
-            "alias": "Temperature Rearing"
-          },
-          {
-            "show": true,
-            "name": "Brook_Trout",
-            "alias": "Brook Trout"
-          },
-          {
-            "show": true,
-            "name": "Pools_Deep_Pools",
-            "alias": "Pools Deep Pools"
-          },
-          {
-            "show": true,
-            "name": "Predators_Adults",
-            "alias": "Predators Adults"
-          },
-          {
-            "show": false,
             "name": "Shape__Length",
-            "alias": "Shape__Length"
+            "alias": "Shape__Length",
+            "show": true
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "ReachName",
+      "isDescending": false
+    },
+    {
+      "name": "Priority_Protection_Reaches",
+      "id": "Priority_Protection_Reaches_7449",
+      "layer": {
+        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Priority_Protection_Reaches/FeatureServer/0",
+        "fields": [
+          {
+            "name": "ReachName",
+            "alias": "ReachName",
+            "show": true
           },
           {
-            "show": false,
-            "name": "CoarseSubstrateLabel",
-            "alias": "Coarse Substrate"
+            "name": "Assessment_Unit",
+            "alias": "Assessment Unit",
+            "show": true
+          },
+          {
+            "name": "Basin",
+            "alias": "Basin",
+            "show": true
+          },
+          {
+            "name": "Priority_Actions",
+            "alias": "Priority Actions",
+            "show": true
+          },
+          {
+            "name": "Reach_Rank",
+            "alias": "Reach Rank",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "Priority_Life_Stages",
+            "alias": "Priority Life Stages",
+            "show": true
+          },
+          {
+            "name": "Action_Categories",
+            "alias": "Action Categories",
+            "show": true
+          },
+          {
+            "name": "OBJECTID_1",
+            "alias": "OBJECTID_1",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "ObjectID",
+            "alias": "ObjectID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": true
+          }
+        ]
+      },
+      "show": true,
+      "showAttachments": false,
+      "sortField": "ReachName",
+      "isDescending": false
+    },
+    {
+      "name": "Missing Data",
+      "id": "Habitat_Quality_Data_Missing_3970",
+      "layer": {
+        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Habitat_Quality_Data_Missing/FeatureServer/0",
+        "fields": [
+          {
+            "name": "ReachName",
+            "alias": "ReachName",
+            "show": true
+          },
+          {
+            "name": "Assessment_Unit",
+            "alias": "Assessment_Unit",
+            "show": true
+          },
+          {
+            "name": "Basin",
+            "alias": "Basin",
+            "show": true
+          },
+          {
+            "name": "Data_Gap",
+            "alias": "Data_Gap",
+            "show": true
+          },
+          {
+            "name": "Primary_Data_Source",
+            "alias": "Primary_Data_Source",
+            "show": true
+          },
+          {
+            "name": "OBJECTID_1",
+            "alias": "OBJECTID_1",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "ObjectID",
+            "alias": "ObjectID",
+            "show": true,
+            "format": {
+              "places": 0,
+              "digitSeparator": false
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "alias": "Shape__Length",
+            "show": true
           }
         ]
       },
@@ -937,68 +458,11 @@
       "name": "Assessment Unit Prioritization Data",
       "id": "AUPrioritization_Stage1Tiers_3334",
       "layer": {
-        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/AUPrioritization_Stage1Tiers/FeatureServer/0",
-        "fields": [
-          {
-            "show": false,
-            "name": "OBJECTID",
-            "alias": "OBJECTID"
-          },
-          {
-            "show": true,
-            "name": "AU",
-            "alias": "AU"
-          },
-          {
-            "show": true,
-            "name": "Subbasin",
-            "alias": "Subbasin"
-          },
-          {
-            "show": true,
-            "name": "SpringChinook_Restoration",
-            "alias": "Spring Chinook Restoration Tier"
-          },
-          {
-            "show": true,
-            "name": "Steelhead_Restoration",
-            "alias": "Steelhead Restoration Tier"
-          },
-          {
-            "show": true,
-            "name": "BullTrout_Restoration",
-            "alias": "Bull Trout Restoration Tier"
-          },
-          {
-            "show": true,
-            "name": "SpringChinook_Protection",
-            "alias": "Spring Chinook Protection Tier"
-          },
-          {
-            "show": true,
-            "name": "Steelhead_Protection",
-            "alias": "Steelhead Protection Tier"
-          },
-          {
-            "show": true,
-            "name": "BullTrout_Protection",
-            "alias": "Bull Trout Protection Tier"
-          },
-          {
-            "show": false,
-            "name": "Shape__Area",
-            "alias": "Shape__Area"
-          },
-          {
-            "show": false,
-            "name": "Shape__Length",
-            "alias": "Shape__Length"
-          }
-        ]
+        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/AUPrioritization_Stage1Tiers/FeatureServer/0"
       },
       "show": true,
       "showAttachments": false,
-      "sortField": "AU",
+      "sortField": "OBJECTID",
       "isDescending": false
     },
     {
@@ -1068,23 +532,12 @@
       "isDescending": false
     },
     {
-      "name": "Life Stage Prioritization",
-      "id": "Join_Features_to_Life_Stage_Restoration_Prioritization_9926",
-      "layer": {
-        "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Join_Features_to_Life_Stage_Restoration_Prioritization/FeatureServer/0"
-      },
-      "show": false,
-      "showAttachments": false,
-      "sortField": "AU",
-      "isDescending": false
-    },
-    {
       "name": "Mask",
       "id": "Mask_UC_4091",
       "layer": {
         "url": "https://services8.arcgis.com/ZXMBUOxDBbivoAgJ/arcgis/rest/services/Mask_UC/FeatureServer/0"
       },
-      "show": false,
+      "show": true,
       "showAttachments": false,
       "sortField": "OBJECTID",
       "isDescending": false

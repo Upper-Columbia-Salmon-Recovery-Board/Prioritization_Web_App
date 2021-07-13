@@ -88,6 +88,7 @@ define([
               this.operLayerInfos = operLayerInfos;
               this.showLayers();
               this.bindEvents();
+              //console.log("first test");
               dom.setSelectable(this.layerListBody1, false);
               dom.setSelectable(this.layerListTitle1, false);
             }));
@@ -160,7 +161,7 @@ define([
           layerListWidget: this,
           layerFilter: this.layerFilter,
           config: this.config,
-          layerIds: 'NaturalBarriers_5824,Barriers_Prioritization_588'
+          layerIds: 'Barriers_Prioritization_6767'
         }).placeAt(this.layerListBody1);
 
 
@@ -171,7 +172,7 @@ define([
           layerListWidget: this,
           layerFilter: this.layerFilter,
           config: this.config,
-          layerIds: 'Reaches_Breakpoints_4852,Reaches_With_Actions_9286,priority_reaches_02222021_174'
+          layerIds: 'Habitat_Quality_Data_Missing_3970,Priority_Protection_Reaches_7449,Priority_Restoration_Reaches_6909,Habitat_Quality_Scores_for_WebMap_5785,Reaches_Breakpoints_4852,Reaches_June2021_4768'
         }).placeAt(this.layerListBody2);
 
         this.layerListView3 = new LayerListView({
